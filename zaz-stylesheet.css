@@ -1,0 +1,828 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	background-color: #d9e7e5;
+}
+@font-face {
+	font-family: 'Mathilde';
+	src: url("fonts/mathilde.otf");
+}
+@font-face {
+	font-family: 'Avenir';
+	src: url("fonts/Avenir.ttc");
+}
+.logo-container {
+	width: 600px;
+	height: 300px;
+	overflow: visible;
+	float: left;
+	position: relative;
+}
+.logo-container img {
+	width: 100%;
+	margin-top: 10px;
+	margin-left: 40px;
+}
+header {
+	background-color: white;
+	height: 300px;
+	border-bottom: 2px solid #919191;
+	box-shadow: 0px 3px 2px 2px #d4dddc;
+	background-image: url("golden geode.png");
+	background-size: 600px 300px;
+	background-repeat: no-repeat;
+	background-position: right;
+}
+.main-nav {
+	padding-top: 215px;
+	float: right;
+	padding-right: 65px;
+	padding-bottom: 0;
+	margin: 0;
+}
+.main-nav ul {
+	padding: 0;
+	margin: 0;
+}
+.main-nav li {
+	list-style-type: none;
+	display: inline-block;
+	text-align: center;
+}
+.main-nav a {
+	display: inline-block;
+	width: 65px;
+	text-align: center;
+	font-family: arial;
+	font-size: 13px;
+	text-decoration: none;
+	margin-left: 20px;
+	color: #919191;
+	background-color: rgba(255,255,255,.6);
+	padding: 5px 8px;
+	padding-bottom: 60px;
+	border-top: 5px solid #919191;
+	box-shadow: 0px 1px 3px 0px #919191;
+}
+.main-nav a:hover {
+	cursor: pointer;
+	color: #e0ab92;
+	background-color: rgba(255,255,255,.8);
+}
+.dropdown {		
+	display: none;
+}
+p {
+	margin: 0;
+	padding: 0;
+}
+.subtitle {
+	font-family: 'Mathilde';
+	font-size: 35px;
+	color: #919191;
+	text-align: center;
+	padding: 5px;
+	margin: auto;
+	width: 600px;
+}
+/************* PARALLAX ************/
+.container {
+	max-width: 80%;
+	margin: 0 auto;
+}
+section.module.parallax h1 {
+	color: rgba(255, 255, 255, 0.8);
+	font-family: georgia;
+	font-size: 60px;
+	line-height: 400px;
+	text-align: center;
+	text-transform: uppercase;
+	text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+section.module.parallax h1 a{
+	text-decoration: none;
+	color: rgba(255, 255, 255, 0.8);
+	font-family: georgia;
+	font-size: 60px;
+	line-height: 400px;
+	text-align: center;
+	text-transform: uppercase;
+	text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+section.module h2 {
+  	margin-bottom: 10px;
+  	margin-top: 0px;
+  	font-family: arial;
+  	text-transform: uppercase;
+  	font-size: 18px;
+  	padding-top: 20px;
+  	color: #3b6468;
+  	text-align: center;
+}
+#gallery-title {
+	line-height: 0;
+	padding-top: 200px;
+	padding-bottom: 20px;
+}
+section.module h3 {
+	text-align: center;
+	position: relative;
+	display: block;
+	margin: 0 auto;
+	padding: 0;
+}
+section.module h3 a {
+	margin: 0;
+  	font-family: "Mathilde";
+  	font-size: 40px;
+  	color: #4a8694;
+  	padding: 10px 50px 10px 50px;
+  	text-decoration: none;
+  	border: 2px solid #4a8694;
+  	background-color: rgba(255, 255, 255, 0.6);
+  	box-shadow: 0px 1px 3px 0px #919191;
+}
+section.module h4 {
+  	font-family: arial;
+  	text-transform: uppercase;
+  	text-decoration: none;
+  	font-size: 18px;
+  	padding-top: 25px;
+  	margin: 0px;
+  	color: #3b6468;
+  	text-align: center;
+}
+section.module p {
+  	font-size: 14px;
+  	color: #3b6468;
+  	font-family: "Avenir";
+  	font-weight: lighter;
+  	padding: 0px;
+  	margin: 0px;
+  	text-align: center;
+}
+section.module.content {
+  	height: 229px;
+}
+#intro-container {
+	background-color: #e7efee;
+	border: 3px solid;
+/*	border-top: 0px transparent;*/
+	-webkit-border-image: url(gold-texture.jpg) 1% repeat; /* Safari 3.1-5 */
+    -o-border-image: url(gold-texture.jpg) 1% repeat; /* Opera 11-12.1 */
+	border-image: url(gold-texture.jpg) 1% repeat;
+	width: 800px;
+	height: 1750px;
+	/*border-image: url(gold-texture.jpg) 1% repeat;
+	width: 800px;
+	background-color: #e7efee;
+	-webkit-border-image: url(gold-texture.jpg) 1% repeat; /* Safari 3.1-5 */
+/*    -o-border-image: url(gold-texture.jpg) 1% repeat; *//* Opera 11-12.1 */
+/*	border-image: url(gold-texture.jpg) 1% repeat;*/*/
+}
+#packages-container {
+	background-color: #e7efee;
+	border: 3px solid;
+	border-top: 0px transparent;
+	-webkit-border-image: url(gold-texture.jpg) 1% repeat; /* Safari 3.1-5 */
+    -o-border-image: url(gold-texture.jpg) 1% repeat; /* Opera 11-12.1 */
+	border-image: url(gold-texture.jpg) 1% repeat;
+	width: 800px;
+	height: 1750px;
+}
+#mission {
+	font-size: 18px;
+	font-family: "Avenir";
+	font-weight: bold;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	text-align: center;
+	color: #3b6468;
+}
+.mission-container {
+	width: 50%;
+	margin: auto;
+	text-align: center;
+}
+.mission-sections {
+	display: inline-block;
+	margin: 0 auto;
+	padding: 0 20 0 20px;
+}
+.discuss-collect-generate {
+	font-size: 18px;
+	font-family: "Avenir";
+	font-style: oblique;
+	color: #3b6468;
+}
+.discuss-collect-generate-list {
+	font-size: 14px;
+	font-family: "Avenir";
+	font-weight: lighter;
+	list-style: none;
+	color: #789fa6;
+	margin: auto;
+}
+#wants {
+	padding-left: 0px;
+	text-align: left;
+}
+#ideas {
+	padding-left: 0px;
+	text-align: left;
+}
+#vision {
+	padding-left: 0px;
+	text-align: left;
+}
+#experience {
+	font-size: 18px;
+	font-family: "Avenir";
+	font-style: oblique;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 30px;
+	color: #3b6468;
+}
+#flipbook {
+	height: 70px;
+	margin: 0px auto;
+	padding: 10px;
+}
+a.packages-link {
+	font-style: oblique;
+	color: #3b6468;
+}
+#packages-info {
+	color: #789fa6;
+	margin: 3 0 10 0px;
+}
+section.module.parallax {
+  	height: 400px;
+  	background-position: 50% 50%;
+  	background-repeat: no-repeat;
+  	background-attachment: fixed;
+  	background-size: cover;
+  	box-shadow: 0px 1px 3px 0px #919191;
+}
+section.module.parallax-1 {
+	background-image: url("photo-1440376202796-51e9741f9468.jpg");
+}
+section.module.parallax-2 {
+	background-image: url("photo-1466036692599-070d032f4711.jpg");
+}
+section.module.parallax-3 {
+	background-image: url("RM-BF-Reception -12.jpg");
+}
+section.module.parallax-4 {
+	background-image: url("photo-1464699908537-0954e50791ee.jpg");
+}
+h5 {
+	font-size: 11px;
+	text-align: center;
+	border-top: 1px solid black;
+	padding: 20px;
+	margin: auto;
+	color: #3b6468;
+}
+#about-container {
+	height: 440px;
+}
+#profile-photo {
+	border: 2px solid #d2a300;
+	border-radius: 50px;
+	display: block;
+	margin: 10 auto;
+}
+#florakogan-dotcom {
+	color: #3b6468;
+}
+#about-paragraph {
+	width: 70%;
+	text-align: justify;
+	text-indent: 30px;
+	margin: auto;
+/*	padding-left: 150px;*/
+}
+#favicon-container {
+	height: 40px;
+	margin: 0 auto;
+	width: 380px;
+	display: block;
+	padding: 10px;
+}
+.icon {
+/*	padding: 10px;*/
+	border-radius: 10px;
+	cursor: hand;
+	cursor: pointer;
+	margin: 10px;
+}
+/*@media all and (min-width: 0px) and (max-width: 510px) {	*/
+/*@media all and (min-width: 0px) and (max-width: 728px) {*/
+@media all and (min-width: 0px) and (max-width: 768px) {	
+	header {
+		height: 150px
+	}
+	.subtitle {
+		font-size: 24px;
+		text-align: center;
+		width: 400px;
+	}
+	.main-nav {
+		position: fixed;
+		padding: 0;
+	}
+	.logo-container {
+		width: 300px;
+		height: 100px;
+		overflow: visible;
+		padding-left: 100px;
+	}
+	.main-nav ul {
+		display: none;
+	}
+	#gallery-title {
+		padding-top: 100px;
+	}
+	#about-paragraph {
+/*		padding-left: 10px;*/
+		padding-top: 10px;
+		margin: auto;
+		width: 85%;
+		font-size: 10px;
+	}
+	#profile-photo {
+		margin: 10s auto;
+	}
+	#profile-desc {
+		font-size: 10px;
+	}
+	#favicon-container {
+		height: 30px;
+		padding: 0;
+		margin: auto;
+		width: 350px;
+	}
+	.icon {
+		height: 35px;
+	}
+	/*#profile-photo {
+		margin: 10 10 10 45px;
+		float: left;
+	}
+	#profile-desc {
+		font-size: 10px;
+		margin-left: 20;
+		text-align: left;
+		width: 130px;
+		float: left;
+		position: absolute;
+		padding-top: 125px;
+	}*/
+	/*#favicon-container {
+		float: right;
+		width: 200px;
+		position: relative;
+	}*/
+	section.module h2 {
+		font-size: 14px;
+	}
+	section.module h3 {
+		padding-top: 20px;
+		text-align: center;
+	}
+	section.module h3 a {
+  		font-size: 35px;
+  		padding: 5px 25px 5px 25px;
+	}
+	section.module h4 {
+  		font-size: 14px;
+  		padding-top: 30px;
+/*  		padding-left: 30px;*/
+	}
+	section.module p {
+		font-size: 11px;
+		padding: 2 15 0 15px;
+	}
+	section.module.content {
+		height: 300px;
+	}
+	#welcome-wrap {
+		height: 300px;
+	}
+	#mission {
+		font-size: 14px;
+	}
+	.mission-sections{
+		padding: 20 10 0 5px;
+	}
+	.mission-container {
+		width: 90%;
+		height: 100%;
+	}
+	.discuss-collect-generate {
+		font-size: 10px;
+	}
+	.discuss-collect-generate-list {
+		font-size: 12px;
+	}
+	#experience {
+		font-size: 14px;
+	}
+	#flipbook {
+		height: 50px;
+	}
+	#packages-container {
+		height: 1400px;
+	}
+	/* Dropdown Button */
+	.dropbtn {
+		background-color: rgba(255,255,255,.6);
+	    color: black;
+	    font-size: 25px;
+	    text-align: center;
+	    margin-top: 20px;
+	    margin-left: 20px;
+	    border: 2px solid black;
+	   	cursor: pointer;
+	   	padding: 1px 8px 4px 8px;
+	}
+
+	/* Dropdown button on hover & focus */
+	.dropbtn:hover, .dropbtn:focus {
+    	background-color: rgba(255,255,255,.2);
+	}
+
+	/* The container <div> - needed to position the dropdown content */
+	.dropdown {
+	    position: relative;
+	    display: inline-block;
+	    padding: 0;
+	    margin: 0;
+	}
+
+	/* Dropdown Content (Hidden by Default) */
+	.dropdown-content {
+	    display: none;
+	    position: absolute;
+	    padding: 0;
+	    margin: 0;
+	}
+
+	/* Links inside the dropdown */
+	.dropdown-content a {
+		border: 1px solid black;
+	    color: black;
+	    background-color: rgba(190,223,226,.6);
+	    padding: 6px 8px;
+	    text-decoration: none;
+	    display: block;
+	}
+
+	/* Change color of dropdown links on hover */
+	.dropdown-content a:hover {background-color: #f1f1f1}
+
+	/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+	.show {display:block;}
+
+ 	section.module.parallax {
+ 		height: 250px;
+ 	}
+	section.module.parallax h1 {
+    	font-size: 40px;
+    	margin: 0;
+    	line-height: 250px;
+ 	}
+ 	section.module.parallax h1 a {
+ 		font-size: 40px;
+    	margin: 0;
+    	line-height: 250px;
+ 	}
+}
+@media all and (min-width: 769px) and (max-width: 907px){
+	.subtitle {
+		font-size: 24px;
+		width: 400px;
+	}
+	.logo-container {
+		width: 400px;
+		height: 200px;
+		overflow: visible;
+		padding-top: 0px;
+	}
+ 	section.module.parallax {
+ 		height: 200px;
+ 	}
+	section.module.parallax h1 {
+    	font-size: 40px;
+    	margin: 0;
+    	line-height: 200px;
+ 	}
+ 	section.module.parallax h1 a {
+ 		font-size: 40px;
+    	margin: 0;
+    	line-height: 200px;
+ 	}
+ 	section.module h3 {
+		padding-top: 20px;
+		text-align: center;
+	}
+	section.module h3 a {
+  		font-size: 35px;
+  		padding: 5px 25px 5px 25px;
+	}
+	section.module h2 {
+		font-size: 16px;
+	}
+	section.module p {
+		font-size: 12px;
+		padding: 2 15 0 15px;
+	}
+	section.module.content {
+		height: 300px;
+	}
+ 	header {
+ 		height: 200px;
+ 	}
+ 	.main-nav {
+ 		padding-top: 18px;
+ 		padding-right: 10px;
+ 		text-align: center;
+ 		margin: 0;
+ 	}
+ 	.main-nav li {
+ 		display: block;
+ 		padding-right: 0;
+ 		margin-bottom: 5px;
+ 		text-align: center;
+ 	}
+ 	.main-nav a {
+ 		width: 90px;
+ 		text-align: center;
+ 		margin: 0;
+ 		padding: 5px;
+ 		font-size: 12px;
+ 		color: #454545;
+ 		border-top: 5px solid #c3d5cf;
+ 	}
+ 	#welcome-wrap {
+ 		height: 300px;
+ 	}
+ 	#mission {
+ 		font-size: 16px;
+ 		width: 80%;
+ 		margin: 0 auto;
+ 	}
+ 	.mission-sections{
+		padding: 20 10 0 5px;
+	}
+	.mission-container {
+		width: 90%;
+		height: 100%;
+	}
+	#experience {
+		font-size: 14px;
+	}
+	#flipbook {
+		height: 50px;
+	}
+	#packages-info {
+		width: 90%;
+		margin: 3 auto;
+	}
+	#gallery-title {
+		padding-top: 100px;
+	}
+	#about-paragraph {
+		padding-top: 10px;
+		margin: auto;
+		width: 85%;
+		font-size: 11px;
+	}
+	#profile-photo {
+		margin: 10s auto;
+	}
+	#profile-desc {
+		font-size: 10px;
+	}
+	#favicon-container {
+		height: 30px;
+		padding: 0;
+		margin: auto;
+		width: 350px;
+	}
+	.icon {
+		height: 35px;
+	}
+	#packages-container {
+		height: 1320px;
+	}
+}
+@media all and (min-width: 908px) and (max-width: 1600px) {
+	.logo-container {
+		width: 400px;
+		height: 200px;
+		overflow: visible;
+		padding-top: 0px;
+	}
+	header {
+		height: 200px;
+	}
+	.main-nav {
+		padding-right: 60px;
+		padding-top: 111px;
+	}
+	.main-nav li {
+		text-align: center;
+	}
+	.main-nav a {
+		width: 60px;
+		font-size: 12px;
+		margin: 5px;
+		text-align: center;
+	}
+	.mission-container {
+		width: 90%;
+		height: 100%;
+	}
+	#experience {
+		font-size: 14px;
+	}
+	#flipbook {
+		height: 50px;
+	}
+	#packages-info {
+		width: 90%;
+		margin: 3 auto;
+	}
+}
+
+
+/************ MOBILE *************/
+
+@media all and (min-device-width: 0px) and (max-device-width: 1242px) {	
+	header {
+		height: 250px
+	}
+	.subtitle {
+		font-size: 36px;
+		text-align: center;
+		width: 600px;
+	}
+	.main-nav {
+		position: fixed;
+		padding: 0;
+	}
+	.logo-container {
+		width: 500px;
+		height: 300px;
+		overflow: visible;
+		padding-left: 250px;
+	}
+	.main-nav ul {
+		display: none;
+	}
+	#gallery-title {
+		padding-top: 200px;
+	}
+	#about-paragraph {
+		padding-top: 10px;
+		margin: auto;
+		width: 85%;
+		font-size: 10px;
+	}
+	#profile-photo {
+		margin: 10s auto;
+	}
+	#profile-desc {
+		font-size: 10px;
+	}
+	#favicon-container {
+		height: 30px;
+		padding: 0;
+		margin: auto;
+		width: 350px;
+	}
+	.icon {
+		height: 35px;
+	}
+	section.module h2 {
+		font-size: 18px;
+	}
+	section.module h3 {
+		padding-top: 20px;
+		text-align: center;
+	}
+	section.module h3 a {
+  		font-size: 35px;
+  		padding: 5px 25px 5px 25px;
+	}
+	section.module h4 {
+  		font-size: 18px;
+  		padding-top: 30px;
+/*  		padding-left: 30px;*/
+	}
+	section.module p {
+		font-size: 18px;
+		padding: 2 15 0 15px;
+	}
+	section.module.content {
+		height: 300px;
+	}
+	#welcome-wrap {
+		height: 300px;
+	}
+	#mission {
+		font-size: 18px;
+	}
+	.mission-sections{
+		padding: 20 10 0 5px;
+	}
+	.mission-container {
+		width: 90%;
+		height: 100%;
+	}
+	.discuss-collect-generate {
+		font-size: 10px;
+	}
+	.discuss-collect-generate-list {
+		font-size: 12px;
+	}
+	#experience {
+		font-size: 14px;
+	}
+	#flipbook {
+		height: 50px;
+	}
+	#packages-container {
+		height: 1400px;
+	}
+	/* Dropdown Button */
+	.dropbtn {
+		background-color: rgba(255,255,255,.6);
+	    color: black;
+	    font-size: 25px;
+	    text-align: center;
+	    margin-top: 20px;
+	    margin-left: 20px;
+	    border: 2px solid black;
+	   	cursor: pointer;
+	   	padding: 1px 8px 4px 8px;
+	}
+
+	/* Dropdown button on hover & focus */
+	.dropbtn:hover, .dropbtn:focus {
+    	background-color: rgba(255,255,255,.2);
+	}
+
+	/* The container <div> - needed to position the dropdown content */
+	.dropdown {
+	    position: relative;
+	    display: inline-block;
+	    padding: 0;
+	    margin: 0;
+	}
+
+	/* Dropdown Content (Hidden by Default) */
+	.dropdown-content {
+	    display: none;
+	    position: absolute;
+	    padding: 0;
+	    margin: 0;
+	}
+
+	/* Links inside the dropdown */
+	.dropdown-content a {
+		border: 1px solid black;
+	    color: black;
+	    background-color: rgba(190,223,226,.6);
+	    padding: 6px 8px;
+	    text-decoration: none;
+	    display: block;
+	}
+
+	/* Change color of dropdown links on hover */
+	.dropdown-content a:hover {background-color: #f1f1f1}
+
+	/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+	.show {display:block;}
+
+ 	section.module.parallax {
+/* 		height: 250px;*/
+		height: 450px;
+		background-position: 0% 0%;
+  		background-attachment: scroll;
+  		background-size: 100%;
+ 	}
+	section.module.parallax h1 {
+    	font-size: 60px;
+    	margin: 0;
+    	line-height: 450px;
+ 	}
+ 	section.module.parallax h1 a {
+ 		font-size: 60px;
+    	margin: 0;
+    	line-height: 450px;
+ 	}
+}
