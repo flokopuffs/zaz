@@ -1,7 +1,15 @@
 html, body {
 	margin: 0;
 	padding: 0;
+	background-color: #eff5f5;
+}
+.content-wrap {
+	width: 1280px;
+	margin: auto;
 	background-color: #d9e7e5;
+	border: 1px solid #adc3c5;
+	border-top: none;
+	border-bottom: none;
 }
 @font-face {
 	font-family: 'Mathilde';
@@ -12,8 +20,8 @@ html, body {
 	src: url("fonts/Avenir.ttc");
 }
 .logo-container {
-	width: 600px;
-	height: 300px;
+	width: 300px;
+	height: 150px;
 	overflow: visible;
 	float: left;
 	position: relative;
@@ -25,7 +33,7 @@ html, body {
 }
 header {
 	background-color: white;
-	height: 300px;
+	height: 140px;
 	border-bottom: 2px solid #919191;
 	box-shadow: 0px 3px 2px 2px #d4dddc;
 	background-image: url("images/golden-geode.png");
@@ -34,9 +42,9 @@ header {
 	background-position: right;
 }
 .main-nav {
-	padding-top: 215px;
+	padding-top: 75px;
 	float: right;
-	padding-right: 65px;
+	padding-right: 45px;
 	padding-bottom: 0;
 	margin: 0;
 }
@@ -52,22 +60,23 @@ header {
 .main-nav a {
 	display: inline-block;
 	width: 65px;
+	/* FONT */
 	text-align: center;
 	font-family: arial;
-	font-size: 13px;
+	font-size: 12px;
 	text-decoration: none;
-	margin-left: 20px;
-	color: #919191;
-	background-color: rgba(255,255,255,.6);
-	padding: 5px 8px;
-	padding-bottom: 60px;
-	border-top: 5px solid #919191;
+	color: #616161;
+	/* PADDING */
+	margin-left: 3px;
+	background-color: rgba(255,255,255,.7);
+	padding: 16px 8px 8px;
+	border-top: 3px solid #5F5F5F;
 	box-shadow: 0px 1px 3px 0px #919191;
 }
 .main-nav a:hover {
 	cursor: pointer;
 	color: #e0ab92;
-	background-color: rgba(255,255,255,.8);
+	background-color: rgba(255,255,255,.9);
 }
 .dropdown {		
 	display: none;
@@ -76,20 +85,7 @@ p {
 	margin: 0;
 	padding: 0;
 }
-.subtitle {
-	font-family: 'Mathilde';
-	font-size: 35px;
-	color: #919191;
-	text-align: center;
-	padding: 5px;
-	margin: auto;
-	width: 600px;
-}
 /************* PARALLAX ************/
-.container {
-	max-width: 80%;
-	margin: 0 auto;
-}
 section.module.parallax h1 {
 	color: rgba(255, 255, 255, 0.8);
 	font-family: georgia;
@@ -109,153 +105,14 @@ section.module.parallax h1 a{
 	text-transform: uppercase;
 	text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
-section.module h2 {
-  	margin-bottom: 10px;
-  	margin-top: 0px;
-  	font-family: arial;
-  	text-transform: uppercase;
-  	font-size: 18px;
-  	padding-top: 20px;
-  	color: #3b6468;
-  	text-align: center;
-}
-#gallery-title {
-	line-height: 0;
-	padding-top: 200px;
-	padding-bottom: 20px;
-}
-section.module h3 {
-	text-align: center;
-	position: relative;
-	display: block;
-	margin: 0 auto;
-	padding: 0;
-}
-section.module h3 a {
-	margin: 0;
-  	font-family: "Mathilde";
-  	font-size: 40px;
-  	color: #4a8694;
-  	padding: 10px 50px 10px 50px;
-  	text-decoration: none;
-  	border: 2px solid #4a8694;
-  	background-color: rgba(255, 255, 255, 0.6);
-  	box-shadow: 0px 1px 3px 0px #919191;
-}
-section.module h4 {
-  	font-family: arial;
-  	text-transform: uppercase;
-  	text-decoration: none;
-  	font-size: 18px;
-  	padding-top: 25px;
-  	margin: 0px;
-  	color: #3b6468;
-  	text-align: center;
-}
-section.module p {
-  	font-size: 14px;
-  	color: #3b6468;
-  	font-family: "Avenir";
-  	font-weight: lighter;
-  	padding: 0px;
-  	margin: 0px;
-  	text-align: center;
-}
-section.module.content {
-  	height: 229px;
-}
 #intro-container {
 	background-color: #e7efee;
 	border: 3px solid;
-/*	border-top: 0px transparent;*/
 	-webkit-border-image: url(images/gold-texture.jpg) 1% repeat; /* Safari 3.1-5 */
     -o-border-image: url(images/gold-texture.jpg) 1% repeat; /* Opera 11-12.1 */
 	border-image: url(images/gold-texture.jpg) 1% repeat;
 	width: 800px;
 	height: 1750px;
-	/*border-image: url(gold-texture.jpg) 1% repeat;
-	width: 800px;
-	background-color: #e7efee;
-	-webkit-border-image: url(gold-texture.jpg) 1% repeat; /* Safari 3.1-5 */
-/*    -o-border-image: url(gold-texture.jpg) 1% repeat; *//* Opera 11-12.1 */
-/*	border-image: url(gold-texture.jpg) 1% repeat;*/*/
-}
-#packages-container {
-	background-color: #e7efee;
-	border: 3px solid;
-	border-top: 0px transparent;
-	-webkit-border-image: url(images/gold-texture.jpg) 1% repeat; /* Safari 3.1-5 */
-    -o-border-image: url(images/gold-texture.jpg) 1% repeat; /* Opera 11-12.1 */
-	border-image: url(images/gold-texture.jpg) 1% repeat;
-	width: 800px;
-	height: 1750px;
-}
-#mission {
-	font-size: 18px;
-	font-family: "Avenir";
-	font-weight: bold;
-	padding-top: 20px;
-	padding-bottom: 10px;
-	text-align: center;
-	color: #3b6468;
-}
-.mission-container {
-	width: 50%;
-	margin: auto;
-	text-align: center;
-}
-.mission-sections {
-	display: inline-block;
-	margin: 0 auto;
-	padding: 0 20 0 20px;
-}
-.discuss-collect-generate {
-	font-size: 18px;
-	font-family: "Avenir";
-	font-style: oblique;
-	color: #3b6468;
-}
-.discuss-collect-generate-list {
-	font-size: 14px;
-	font-family: "Avenir";
-	font-weight: lighter;
-	list-style: none;
-	color: #789fa6;
-	margin: auto;
-}
-#wants {
-	padding-left: 0px;
-	text-align: left;
-}
-#ideas {
-	padding-left: 0px;
-	text-align: left;
-}
-#vision {
-	padding-left: 0px;
-	text-align: left;
-}
-#experience {
-	font-size: 18px;
-	font-family: "Avenir";
-	font-style: oblique;
-	font-weight: bold;
-	text-align: center;
-	padding-top: 30px;
-	color: #3b6468;
-}
-#flipbook {
-	height: 70px;
-	margin: 0px auto;
-	padding: 10px;
-}
-a.packages-link {
-	font-style: oblique;
-	color: #3b6468;
-}
-#packages-info {
-	color: #789fa6;
-	margin: 3 0 10 0px;
 }
 section.module.parallax {
   	height: 400px;
@@ -288,25 +145,6 @@ h5 {
 	margin: auto;
 	color: #3b6468;
 }
-#about-container {
-	height: 440px;
-}
-#profile-photo {
-	border: 2px solid #d2a300;
-	border-radius: 50px;
-	display: block;
-	margin: 10 auto;
-}
-#florakogan-dotcom {
-	color: #3b6468;
-}
-#about-paragraph {
-	width: 70%;
-	text-align: justify;
-	text-indent: 30px;
-	margin: auto;
-/*	padding-left: 150px;*/
-}
 #favicon-container {
 	height: 40px;
 	margin: 0 auto;
@@ -321,16 +159,9 @@ h5 {
 	cursor: pointer;
 	margin: 10px;
 }
-/*@media all and (min-width: 0px) and (max-width: 510px) {	*/
-/*@media all and (min-width: 0px) and (max-width: 728px) {*/
 @media all and (min-width: 0px) and (max-width: 768px) {	
 	header {
 		height: 150px
-	}
-	.subtitle {
-		font-size: 24px;
-		text-align: center;
-		width: 400px;
 	}
 	.main-nav {
 		position: fixed;
@@ -345,22 +176,6 @@ h5 {
 	.main-nav ul {
 		display: none;
 	}
-	#gallery-title {
-		padding-top: 100px;
-	}
-	#about-paragraph {
-/*		padding-left: 10px;*/
-		padding-top: 10px;
-		margin: auto;
-		width: 85%;
-		font-size: 10px;
-	}
-	#profile-photo {
-		margin: 10s auto;
-	}
-	#profile-desc {
-		font-size: 10px;
-	}
 	#favicon-container {
 		height: 30px;
 		padding: 0;
@@ -369,75 +184,6 @@ h5 {
 	}
 	.icon {
 		height: 35px;
-	}
-	/*#profile-photo {
-		margin: 10 10 10 45px;
-		float: left;
-	}
-	#profile-desc {
-		font-size: 10px;
-		margin-left: 20;
-		text-align: left;
-		width: 130px;
-		float: left;
-		position: absolute;
-		padding-top: 125px;
-	}*/
-	/*#favicon-container {
-		float: right;
-		width: 200px;
-		position: relative;
-	}*/
-	section.module h2 {
-		font-size: 14px;
-	}
-	section.module h3 {
-		padding-top: 20px;
-		text-align: center;
-	}
-	section.module h3 a {
-  		font-size: 35px;
-  		padding: 5px 25px 5px 25px;
-	}
-	section.module h4 {
-  		font-size: 14px;
-  		padding-top: 30px;
-/*  		padding-left: 30px;*/
-	}
-	section.module p {
-		font-size: 11px;
-		padding: 2 15 0 15px;
-	}
-	section.module.content {
-		height: 300px;
-	}
-	#welcome-wrap {
-		height: 300px;
-	}
-	#mission {
-		font-size: 14px;
-	}
-	.mission-sections{
-		padding: 20 10 0 5px;
-	}
-	.mission-container {
-		width: 90%;
-		height: 100%;
-	}
-	.discuss-collect-generate {
-		font-size: 10px;
-	}
-	.discuss-collect-generate-list {
-		font-size: 12px;
-	}
-	#experience {
-		font-size: 14px;
-	}
-	#flipbook {
-		height: 50px;
-	}
-	#packages-container {
-		height: 1400px;
 	}
 	/* Dropdown Button */
 	.dropbtn {
@@ -503,6 +249,7 @@ h5 {
     	line-height: 250px;
  	}
 }
+
 /************ MOBILE *************/
 
 @media all and (min-device-width: 0px) and (max-device-width: 1242px) {	
@@ -527,21 +274,6 @@ h5 {
 	.main-nav ul {
 		display: none;
 	}
-	#gallery-title {
-		padding-top: 200px;
-	}
-	#about-paragraph {
-		padding-top: 10px;
-		margin: auto;
-		width: 85%;
-		font-size: 10px;
-	}
-	#profile-photo {
-		margin: 10s auto;
-	}
-	#profile-desc {
-		font-size: 10px;
-	}
 	#favicon-container {
 		height: 30px;
 		padding: 0;
@@ -550,57 +282,6 @@ h5 {
 	}
 	.icon {
 		height: 35px;
-	}
-	section.module h2 {
-		font-size: 18px;
-	}
-	section.module h3 {
-		padding-top: 20px;
-		text-align: center;
-	}
-	section.module h3 a {
-  		font-size: 35px;
-  		padding: 5px 25px 5px 25px;
-	}
-	section.module h4 {
-  		font-size: 18px;
-  		padding-top: 30px;
-/*  		padding-left: 30px;*/
-	}
-	section.module p {
-		font-size: 18px;
-		padding: 2 15 0 15px;
-	}
-	section.module.content {
-		height: 300px;
-	}
-	#welcome-wrap {
-		height: 300px;
-	}
-	#mission {
-		font-size: 18px;
-	}
-	.mission-sections{
-		padding: 20 10 0 5px;
-	}
-	.mission-container {
-		width: 90%;
-		height: 100%;
-	}
-	.discuss-collect-generate {
-		font-size: 10px;
-	}
-	.discuss-collect-generate-list {
-		font-size: 12px;
-	}
-	#experience {
-		font-size: 14px;
-	}
-	#flipbook {
-		height: 50px;
-	}
-	#packages-container {
-		height: 1400px;
 	}
 	/* Dropdown Button */
 	.dropbtn {
