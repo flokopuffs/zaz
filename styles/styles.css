@@ -1,0 +1,377 @@
+@font-face {
+  font-family: 'Mathilde';
+  src: url("fonts/mathilde.otf");
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url("fonts/Avenir.ttc");
+}
+
+h1 {
+  font-size: 20px;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #eff5f5;
+}
+
+.content-wrap {
+  width: 1280px;
+  margin: auto;
+  background-color: #d9e7e5;
+  border: 1px solid #adc3c5;
+  border-top: none;
+  border-bottom: none;
+}
+
+.logo-container {
+  width: 300px;
+  height: 150px;
+  overflow: visible;
+  float: left;
+  position: relative;
+}
+
+.logo-container img {
+  width: 100%;
+  margin-top: 10px;
+  margin-left: 40px;
+}
+
+header {
+  background-color: white;
+  height: 140px;
+  border-bottom: 2px solid #919191;
+  box-shadow: 0px 3px 2px 2px #d4dddc;
+  background-image: url("../images/golden-geode.png");
+  background-size: 600px 300px;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.main-nav {
+  padding-top: 75px;
+  float: right;
+  padding-right: 45px;
+  padding-bottom: 0;
+  margin: 0;
+}
+
+.main-nav ul {
+  padding: 0;
+  margin: 0;
+}
+
+.main-nav li {
+  list-style-type: none;
+  display: inline-block;
+  text-align: center;
+}
+
+.main-nav a {
+  display: inline-block;
+  width: 65px;
+  /* FONT */
+  text-align: center;
+  font-family: arial;
+  font-size: 12px;
+  text-decoration: none;
+  color: #616161;
+  /* PADDING */
+  margin-left: 3px;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 16px 8px 8px;
+  border-top: 3px solid #5F5F5F;
+  box-shadow: 0px 1px 3px 0px #919191;
+}
+
+.main-nav a:hover {
+  cursor: pointer;
+  color: #e0ab92;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.dropdown {
+  display: none;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/************* PARALLAX ************/
+section.module.parallax h1 {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: georgia;
+  font-size: 60px;
+  line-height: 400px;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+section.module.parallax h1 a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: georgia;
+  font-size: 60px;
+  line-height: 400px;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#intro-container {
+  background-color: #e7efee;
+  border: 3px solid;
+  -webkit-border-image: url(images/gold-texture.jpg) 1% repeat;
+  /* Safari 3.1-5 */
+  -o-border-image: url(images/gold-texture.jpg) 1% repeat;
+  /* Opera 11-12.1 */
+  border-image: url(images/gold-texture.jpg) 1% repeat;
+  width: 800px;
+  height: 1750px;
+}
+
+section.module.parallax {
+  height: 400px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  box-shadow: 0px 1px 3px 0px #919191;
+}
+
+section.module.parallax-1 {
+  background-image: url("images/parallax/parallax-contact.jpg");
+  /* Remove this image? */
+}
+
+section.module.parallax-2 {
+  background-image: url("images/parallax/parallax-services.jpg");
+}
+
+section.module.parallax-3 {
+  background-image: url("images/parallax/parallax-gallery.jpg");
+}
+
+section.module.parallax-4 {
+  background-image: url("images/parallax/parallax-contact.jpg");
+}
+
+h5 {
+  font-family: 'Avenir';
+  font-weight: 200;
+  font-size: 11px;
+  text-align: center;
+  border-top: 1px solid black;
+  padding: 20px;
+  margin: auto;
+  color: #3b6468;
+}
+
+#favicon-container {
+  height: 40px;
+  margin: 0 auto;
+  width: 380px;
+  display: block;
+  padding: 10px;
+}
+
+.icon {
+  /*	padding: 10px;*/
+  border-radius: 4px;
+  cursor: hand;
+  cursor: pointer;
+  margin: 10px;
+}
+
+@media all and (min-width: 0px) and (max-width: 768px) {
+  header {
+    height: 150px;
+  }
+  .main-nav {
+    position: fixed;
+    padding: 0;
+  }
+  .logo-container {
+    width: 300px;
+    height: 100px;
+    overflow: visible;
+    padding-left: 100px;
+  }
+  .main-nav ul {
+    display: none;
+  }
+  #favicon-container {
+    height: 30px;
+    padding: 0;
+    margin: auto;
+    width: 350px;
+  }
+  .icon {
+    height: 35px;
+  }
+  /* Dropdown Button */
+  .dropbtn {
+    background-color: rgba(255, 255, 255, 0.6);
+    color: black;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 20px;
+    border: 2px solid black;
+    cursor: pointer;
+    padding: 1px 8px 4px 8px;
+  }
+  /* Dropdown button on hover & focus */
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+  }
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+  }
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    border: 1px solid black;
+    color: black;
+    background-color: rgba(190, 223, 226, 0.6);
+    padding: 6px 8px;
+    text-decoration: none;
+    display: block;
+  }
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {
+    display: block;
+  }
+  section.module.parallax {
+    height: 250px;
+  }
+  section.module.parallax h1 {
+    font-size: 40px;
+    margin: 0;
+    line-height: 250px;
+  }
+  section.module.parallax h1 a {
+    font-size: 40px;
+    margin: 0;
+    line-height: 250px;
+  }
+}
+
+/************ MOBILE *************/
+@media all and (min-device-width: 0px) and (max-device-width: 1242px) {
+  header {
+    height: 250px;
+  }
+  .subtitle {
+    font-size: 36px;
+    text-align: center;
+    width: 600px;
+  }
+  .main-nav {
+    position: fixed;
+    padding: 0;
+  }
+  .logo-container {
+    width: 500px;
+    height: 300px;
+    overflow: visible;
+    padding-left: 250px;
+  }
+  .main-nav ul {
+    display: none;
+  }
+  #favicon-container {
+    height: 30px;
+    padding: 0;
+    margin: auto;
+    width: 350px;
+  }
+  .icon {
+    height: 35px;
+  }
+  /* Dropdown Button */
+  .dropbtn {
+    background-color: rgba(255, 255, 255, 0.6);
+    color: black;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 20px;
+    border: 2px solid black;
+    cursor: pointer;
+    padding: 1px 8px 4px 8px;
+  }
+  /* Dropdown button on hover & focus */
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+  }
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+  }
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    border: 1px solid black;
+    color: black;
+    background-color: rgba(190, 223, 226, 0.6);
+    padding: 6px 8px;
+    text-decoration: none;
+    display: block;
+  }
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {
+    display: block;
+  }
+  section.module.parallax {
+    /* 		height: 250px;*/
+    height: 450px;
+    background-position: 0% 0%;
+    background-attachment: scroll;
+    background-size: 100%;
+  }
+  section.module.parallax h1 {
+    font-size: 60px;
+    margin: 0;
+    line-height: 450px;
+  }
+  section.module.parallax h1 a {
+    font-size: 60px;
+    margin: 0;
+    line-height: 450px;
+  }
+}
