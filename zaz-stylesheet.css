@@ -28,7 +28,7 @@ header {
 	height: 300px;
 	border-bottom: 2px solid #919191;
 	box-shadow: 0px 3px 2px 2px #d4dddc;
-	background-image: url("golden geode.png");
+	background-image: url("images/golden-geode.png");
 	background-size: 600px 300px;
 	background-repeat: no-repeat;
 	background-position: right;
@@ -168,9 +168,9 @@ section.module.content {
 	background-color: #e7efee;
 	border: 3px solid;
 /*	border-top: 0px transparent;*/
-	-webkit-border-image: url(gold-texture.jpg) 1% repeat; /* Safari 3.1-5 */
-    -o-border-image: url(gold-texture.jpg) 1% repeat; /* Opera 11-12.1 */
-	border-image: url(gold-texture.jpg) 1% repeat;
+	-webkit-border-image: url(images/gold-texture.jpg) 1% repeat; /* Safari 3.1-5 */
+    -o-border-image: url(images/gold-texture.jpg) 1% repeat; /* Opera 11-12.1 */
+	border-image: url(images/gold-texture.jpg) 1% repeat;
 	width: 800px;
 	height: 1750px;
 	/*border-image: url(gold-texture.jpg) 1% repeat;
@@ -184,9 +184,9 @@ section.module.content {
 	background-color: #e7efee;
 	border: 3px solid;
 	border-top: 0px transparent;
-	-webkit-border-image: url(gold-texture.jpg) 1% repeat; /* Safari 3.1-5 */
-    -o-border-image: url(gold-texture.jpg) 1% repeat; /* Opera 11-12.1 */
-	border-image: url(gold-texture.jpg) 1% repeat;
+	-webkit-border-image: url(images/gold-texture.jpg) 1% repeat; /* Safari 3.1-5 */
+    -o-border-image: url(images/gold-texture.jpg) 1% repeat; /* Opera 11-12.1 */
+	border-image: url(images/gold-texture.jpg) 1% repeat;
 	width: 800px;
 	height: 1750px;
 }
@@ -266,18 +266,21 @@ section.module.parallax {
   	box-shadow: 0px 1px 3px 0px #919191;
 }
 section.module.parallax-1 {
-	background-image: url("photo-1440376202796-51e9741f9468.jpg");
+	background-image: url("images/parallax/parallax-contact.jpg");
+	/* Remove this image? */
 }
 section.module.parallax-2 {
-	background-image: url("photo-1466036692599-070d032f4711.jpg");
+	background-image: url("images/parallax/parallax-services.jpg");
 }
 section.module.parallax-3 {
-	background-image: url("RM-BF-Reception -12.jpg");
+	background-image: url("images/parallax/parallax-gallery.jpg");
 }
 section.module.parallax-4 {
-	background-image: url("photo-1464699908537-0954e50791ee.jpg");
+	background-image: url("images/parallax/parallax-contact.jpg");
 }
 h5 {
+	font-family: 'Avenir';
+	font-weight: 200;
 	font-size: 11px;
 	text-align: center;
 	border-top: 1px solid black;
@@ -500,165 +503,6 @@ h5 {
     	line-height: 250px;
  	}
 }
-@media all and (min-width: 769px) and (max-width: 907px){
-	.subtitle {
-		font-size: 24px;
-		width: 400px;
-	}
-	.logo-container {
-		width: 400px;
-		height: 200px;
-		overflow: visible;
-		padding-top: 0px;
-	}
- 	section.module.parallax {
- 		height: 200px;
- 	}
-	section.module.parallax h1 {
-    	font-size: 40px;
-    	margin: 0;
-    	line-height: 200px;
- 	}
- 	section.module.parallax h1 a {
- 		font-size: 40px;
-    	margin: 0;
-    	line-height: 200px;
- 	}
- 	section.module h3 {
-		padding-top: 20px;
-		text-align: center;
-	}
-	section.module h3 a {
-  		font-size: 35px;
-  		padding: 5px 25px 5px 25px;
-	}
-	section.module h2 {
-		font-size: 16px;
-	}
-	section.module p {
-		font-size: 12px;
-		padding: 2 15 0 15px;
-	}
-	section.module.content {
-		height: 300px;
-	}
- 	header {
- 		height: 200px;
- 	}
- 	.main-nav {
- 		padding-top: 18px;
- 		padding-right: 10px;
- 		text-align: center;
- 		margin: 0;
- 	}
- 	.main-nav li {
- 		display: block;
- 		padding-right: 0;
- 		margin-bottom: 5px;
- 		text-align: center;
- 	}
- 	.main-nav a {
- 		width: 90px;
- 		text-align: center;
- 		margin: 0;
- 		padding: 5px;
- 		font-size: 12px;
- 		color: #454545;
- 		border-top: 5px solid #c3d5cf;
- 	}
- 	#welcome-wrap {
- 		height: 300px;
- 	}
- 	#mission {
- 		font-size: 16px;
- 		width: 80%;
- 		margin: 0 auto;
- 	}
- 	.mission-sections{
-		padding: 20 10 0 5px;
-	}
-	.mission-container {
-		width: 90%;
-		height: 100%;
-	}
-	#experience {
-		font-size: 14px;
-	}
-	#flipbook {
-		height: 50px;
-	}
-	#packages-info {
-		width: 90%;
-		margin: 3 auto;
-	}
-	#gallery-title {
-		padding-top: 100px;
-	}
-	#about-paragraph {
-		padding-top: 10px;
-		margin: auto;
-		width: 85%;
-		font-size: 11px;
-	}
-	#profile-photo {
-		margin: 10s auto;
-	}
-	#profile-desc {
-		font-size: 10px;
-	}
-	#favicon-container {
-		height: 30px;
-		padding: 0;
-		margin: auto;
-		width: 350px;
-	}
-	.icon {
-		height: 35px;
-	}
-	#packages-container {
-		height: 1320px;
-	}
-}
-@media all and (min-width: 908px) and (max-width: 1600px) {
-	.logo-container {
-		width: 400px;
-		height: 200px;
-		overflow: visible;
-		padding-top: 0px;
-	}
-	header {
-		height: 200px;
-	}
-	.main-nav {
-		padding-right: 60px;
-		padding-top: 111px;
-	}
-	.main-nav li {
-		text-align: center;
-	}
-	.main-nav a {
-		width: 60px;
-		font-size: 12px;
-		margin: 5px;
-		text-align: center;
-	}
-	.mission-container {
-		width: 90%;
-		height: 100%;
-	}
-	#experience {
-		font-size: 14px;
-	}
-	#flipbook {
-		height: 50px;
-	}
-	#packages-info {
-		width: 90%;
-		margin: 3 auto;
-	}
-}
-
-
 /************ MOBILE *************/
 
 @media all and (min-device-width: 0px) and (max-device-width: 1242px) {	
