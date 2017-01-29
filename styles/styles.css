@@ -76,6 +76,16 @@ p {
   line-height: 32px;
 }
 
+.content-wrap .margarita .margarita-text .attributions {
+  width: 600px;
+}
+
+.content-wrap .margarita .margarita-text .attributions p {
+  font-size: 11px;
+  letter-spacing: 4px;
+  line-height: 32px;
+}
+
 .content-wrap .margarita .margarita-text .info-detail p {
   font-weight: 700;
   font-size: 14px;
@@ -311,6 +321,11 @@ p {
   border-top: 2px solid #b3cbcf;
   padding: 20px;
   margin: auto;
+  color: #3b6468;
+}
+
+.content-wrap h5 a {
+  text-decoration: none;
   color: #3b6468;
 }
 
