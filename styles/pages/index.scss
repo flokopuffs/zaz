@@ -24,11 +24,12 @@ p {
 	border: 1px solid #adc3c5;
 	border-top: none;
 	border-bottom: none;
+	box-shadow: 0px 10px 5px 5px rgba(0,0,0,.1);
 	.margarita {
 		height: 440px;
 		background-image: url('../images/margarita-background.png');
 		background-size: 100%;
-		padding: 80px 0px 0px 80px;
+		padding: 40px 0px 0px 80px;
 		.margarita-text {
 			float: left;
 			width: 400px;
@@ -48,20 +49,32 @@ p {
 					line-height: 32px;
 				}
 			}
+			.info-detail {
+				p {
+					font-weight: 700;
+					font-size: 14px;
+				}
+			}
 			.buttons {
-				margin-top: 16px;
+				a {
+					text-decoration: none;
+				}
 				.button-white {
+					width: 300px;
 					background-color: rgba(255,255,255,.2);
 					border-radius: 4px;
 					height: 40px;
-					width: 350px;
 					margin-top: 10px;
 					border: 1px solid white;
 					p {
+						/* Font Styling */
 						letter-spacing: 3px;
 						font-size: 12px;
 						line-height: 40px;
 						text-align: center;
+						color: white;
+						font-family: 'Avenir';
+						text-transform: uppercase;
 					}
 					&:hover {
 						cursor: pointer;
@@ -72,6 +85,60 @@ p {
 						}
 					}
 				}
+			}
+			form {
+				p {
+					padding-top: 18px;
+					padding-bottom: 8px;
+				}
+				input[type=text], textarea {
+					border: 1px solid white;
+					background-color: rgba(255,255,255,.1);
+					height: 40px;
+					width: 400px;
+					font-family: 'Avenir';
+					color: white;
+					font-size: 17px;
+					padding: 1px 4px 0px 6px;
+					font-weight: 200;
+					&:focus {
+						border: 2px solid #f8db75;
+						outline: none;
+					}
+				}
+				textarea {
+					height: 60px;
+					padding: 6px;
+				}
+				input[type=submit] {
+					margin-left: 200px;
+					width: 200px;
+					background-color: rgba(255,255,255,.2);
+					border-radius: 4px;
+					height: 40px;
+					margin-top: 10px;
+					border: 1px solid white;
+					/* Font Styling */
+					letter-spacing: 3px;
+					font-size: 12px;
+					line-height: 35px;
+					text-align: center;
+					color: white;
+					font-family: 'Avenir';
+					text-transform: uppercase;
+					&:hover {
+						cursor: pointer;
+						background-color: #FFF;
+						color: $teal-dark;
+						font-weight: 500;
+					}
+				}
+			}
+		}
+		.margarita-image-index {
+			img {
+				float: right;
+				width: 420px;
 			}
 		}
 		.margarita-image {
@@ -92,10 +159,118 @@ p {
 		border-right: 0;
 		border-top: 0;
 		p {
+			float: left;
 			line-height: 100px;
-			margin-left: 80px;
+			margin-left: 200px;
 			color: #CCC;
+			margin-right: 10px;
 		}
+		.package-icons {
+			a {
+				text-decoration: none;
+				img {
+					margin-left: 60px;
+					height: 64px;
+					margin-top: 15px;
+					&:hover {
+						cursor: pointer;
+						-webkit-transform: rotate(10deg);
+					}
+				}
+			}
+		}
+	}
+	.about {
+		width: 864px;
+		height: 320px;
+		background-image: url(../images/rustic-background.png);
+		background-size: 100%;
+		padding: 40px 80px;
+		.about-text {
+			background-color: rgba(255,255,255,.8);
+			width: 390px;
+			height: 280px;
+			padding: 25px;
+			float: left;
+			.about-title {
+				p {
+					font-size: 14px;
+					letter-spacing: 2px;
+					color: #313131;
+					font-weight: 800;
+					text-align: center;
+					padding-bottom: 10px;
+				}
+			}
+			.about-description {
+				p {
+					color: #313131;
+					font-size: 13px;
+					letter-spacing: 1px;
+					text-transform: none;
+					line-height: 15px;
+				}
+			}
+		}
+		.about-image {
+			float: left;
+			width: 170px;
+			height: 170px;
+			margin-top: 75px;
+			margin-left: 170px;
+			border-radius: 400px;
+			background-image: url(../images/profilephoto.jpg);
+			background-size: 100%;
+			background-position: 50% 50%;
+			border: 3px solid #D9E7E5;
+		}
+	}
+	.instagram-container {
+		width: 100%;
+		background-image: url(../images/instagram-background.png);
+		background-size: 100%;
+		.instagram-wall {
+			p {
+				margin-left: 4px;
+				letter-spacing: 1px;
+				color: $teal-dark;
+				font-weight: 500;
+			}
+			margin-left: 262px;
+			width: 500px;
+			height: 520px;
+			padding: 20px 0px;
+
+		}
+	}
+	.favicon-center {
+		background-color: $teal-light;
+		.favicon-container {
+			height: 40px;
+			margin: 0 auto;
+			width: 260px;
+			display: block;
+			padding: 10px 2px;
+			a {
+				text-decoration: none;
+				.icon {
+					border-radius: 4px;
+					cursor: hand;
+					cursor: pointer;
+					margin: 0px;
+				}
+			}
+		}
+	}
+	h5 {
+		font-family: 'Avenir';
+		font-weight: 200;
+		font-size: 12px;
+		text-align: center;
+		border-top: 2px solid #b3cbcf;
+		padding: 20px;
+		margin: auto;
+		color: $teal-dark;
 	}
 }
 .logo-container {
@@ -113,8 +288,7 @@ p {
 header {
 	background-color: white;
 	height: 140px;
-	border-bottom: 2px solid #919191;
-	box-shadow: 0px 3px 2px 2px #d4dddc;
+	box-shadow: 0px 5px 0px 0px rgba(0,0,0,.9);
 	background-image: url("../images/golden-geode.png");
 	background-size: 600px 300px;
 	background-repeat: no-repeat;
@@ -163,80 +337,6 @@ header {
 p {
 	margin: 0;
 	padding: 0;
-}
-/************* PARALLAX ************/
-section.module.parallax h1 {
-	color: rgba(255, 255, 255, 0.8);
-	font-family: georgia;
-	font-size: 60px;
-	line-height: 400px;
-	text-align: center;
-	text-transform: uppercase;
-	text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
-section.module.parallax h1 a{
-	text-decoration: none;
-	color: rgba(255, 255, 255, 0.8);
-	font-family: georgia;
-	font-size: 60px;
-	line-height: 400px;
-	text-align: center;
-	text-transform: uppercase;
-	text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
-#intro-container {
-	background-color: #e7efee;
-	border: 3px solid;
-	-webkit-border-image: url(images/gold-texture.jpg) 1% repeat; /* Safari 3.1-5 */
-    -o-border-image: url(images/gold-texture.jpg) 1% repeat; /* Opera 11-12.1 */
-	border-image: url(images/gold-texture.jpg) 1% repeat;
-	width: 800px;
-	height: 1750px;
-}
-section.module.parallax {
-  	height: 400px;
-  	background-position: 50% 50%;
-  	background-repeat: no-repeat;
-  	background-attachment: fixed;
-  	background-size: cover;
-  	box-shadow: 0px 1px 3px 0px #919191;
-}
-section.module.parallax-1 {
-	background-image: url("images/parallax/parallax-contact.jpg");
-	/* Remove this image? */
-}
-section.module.parallax-2 {
-	background-image: url("images/parallax/parallax-services.jpg");
-}
-section.module.parallax-3 {
-	background-image: url("images/parallax/parallax-gallery.jpg");
-}
-section.module.parallax-4 {
-	background-image: url("images/parallax/parallax-contact.jpg");
-}
-h5 {
-	font-family: 'Avenir';
-	font-weight: 200;
-	font-size: 11px;
-	text-align: center;
-	border-top: 1px solid black;
-	padding: 20px;
-	margin: auto;
-	color: $teal-dark;
-}
-#favicon-container {
-	height: 40px;
-	margin: 0 auto;
-	width: 380px;
-	display: block;
-	padding: 10px;
-}
-.icon {
-/*	padding: 10px;*/
-	border-radius: 4px;
-	cursor: hand;
-	cursor: pointer;
-	margin: 10px;
 }
 @media all and (min-width: 0px) and (max-width: 768px) {	
 	header {

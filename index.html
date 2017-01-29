@@ -3,33 +3,33 @@
 		<meta charset="utf-8">
 		<title>ZAZ STUDIO | interiors + events</title>
 		<link rel="stylesheet" href="styles/styles.css">
-		<script src="zaz-java.js"></script>
+		<script src="scripts/zaz-java.js"></script>
 		<!--	<link rel="shortcut icon" href="__link to .ico favicon__"> -->
 		<!--	<link rel="shortcut icon" type="image/x-icon" href="__link to .ico favicon__"> -->
 	</head>
 	<body>
 		<div class="content-wrap">
-			<div class="logo-container">
-				<img src="images/Logo_ZAZ Studio.png">
-			</div>
+      <a href="index.html">
+        <div class="logo-container">
+          <img src="images/Logo_ZAZ Studio.png">
+        </div>
+      </a>
 			<header>
 				<nav class="main-nav">
 					<div class="dropdown">
   						<div onclick="myFunction()" class="dropbtn">&#9776;</div>
  						<div id="myDropdown" class="dropdown-content">
-							<a href="#welcome">WELCOME</a>
-							<a href="#services">SERVICES</a>
+							<a href="files/packages_web.pdf">PACKAGES</a>
 							<a href="#gallery">GALLERY</a>
 							<a href="#about">ABOUT</a>
-							<a href="#contact">CONTACT</a>
+							<a href="info.html">CONTACT</a>
 						</div>
 					</div>
 					<ul>
-						<li><a href="#welcome">WELCOME</a></li>
-						<li><a href="#services">SERVICES</a></li>
-						<li><a href="#gallery">GALLERY</a></li>
-						<li><a href="#about">ABOUT</a></li>
-						<li><a href="#contact">CONTACT</a></li>
+            <li><a href="files/packages_web.pdf">PACKAGES</a></li>
+            <li><a href="#gallery">GALLERY</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="info.html">CONTACT</a></li>
 					</ul>
 				</nav>
 			</header>
@@ -39,29 +39,42 @@
           <h1>We Design</h1>
           <h1>We Create</h1>
           <div class="subtitle">
-            <p>Make your interiors and events with Zaz Studio.</p>
+            <p>Make your interior or event a reality with Zaz Studio.</p>
           </div>
           <div class="buttons">
-            <div class="button-white">
-              <p>Let's chat about your event!</p>
-            </div>
-            <div class="button-white">
-              <p>Let's design your space!</p>
-            </div>
+            <a href="info.html">
+              <div class="button-white">
+                <p>Let's design your space!</p>
+              </div>
+            </a>
+            <a href="info.html">
+              <div class="button-white">
+                <p>Let's chat about your event!</p>
+              </div>
+            </a>
           </div>
         </div>
-        <div class="margarita-image">
-          <img src="images/margarita.png"></img>
+        <div class="margarita-image-index">
+          <img src="images/margarita3.png"></img>
         </div>
         <div class="clearfix"></div>
       </div>
       <div class="packages">
-        <div class="our-packages">
-          <p>Our Packages</p>
+        <p>Our Packages</p>
+        <div class="package-icons">
+          <a href="files/packages_web.pdf">
+            <img src="images/package-openbar.png"></img>
+          </a>
+          <a href="files/packages_web.pdf">
+            <img src="images/package-champagne.png"></img>
+          </a>
+          <a href="files/packages_web.pdf">
+            <img src="images/package-martini.png"></img>
+          </a>
         </div>
       </div>
-			<div class="parallax">
-        <div id="favicon-container">
+      <div class="favicon-center">
+        <div class="favicon-container">
           <a href="https://www.yelp.com/biz/zaz-studio-somerville" target="_blank">
             <img src="images/favicons/yelp.jpg" height="100%" class="icon"></img>
           </a>
@@ -81,8 +94,33 @@
             <img src="images/favicons/email.jpg" height="100%" class="icon"></img>
           </a>
         </div>
-				<h5>&#169; 2017 ZAZ STUDIO</h5>
-			</div>
+      </div>
+      <div class="about">
+        <a name="about"></a>
+        <div class="about-text">
+          <div class="about-title">
+            <p>About the owner</p>
+          </div>
+          <div class="about-description">
+            <p>Flora started off her career as a prop master's assistant, working on sets for Broadway and Off-Broadway shows. The experience ignited her passion for spatial design. Since then, she has worked for a variety of well-know firms designing interiors for hotels, restaurants, and residential homes.</p>
+            <br>
+            <p>Flora believes in the psychology of limitations, meaning that constraints and variables can push us to find more creative approaches. She is a master at creating fresh, chic, and elegant environments using a mixture of contemporary and eclectic elements. Since launching ZAZ Studio, Flora has made it her commitment to design memorable, immersive spaces and experiences for her clients by implementing innovative thinking, strategic planning, budget-conscious creativity, and a firm cohesive vision.</p>
+          </div>
+        </div>
+        <div class="about-image">
+        </div>
+      </div>
+      <div class="clearfix"></div>
+      <div class="instagram-container">
+        <a name="gallery"></a>
+        <div class="instagram-wall">
+          <p>RECENT WORK...</p>
+          <script src="http://lightwidget.com/widgets/lightwidget.js"></script>
+          <iframe src="http://lightwidget.com/widgets/85ecd34cab955801b42a488794f133ca.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;">
+          </iframe>
+        </div>
+      </div>
+      <h5>&#169; 2017 ZAZ STUDIO</h5>
 		</div>
 	</body>
 </html>
