@@ -49,6 +49,14 @@ p {
 					line-height: 32px;
 				}
 			}
+			.attributions {
+				width: 600px;
+				p {
+					font-size: 11px;
+					letter-spacing: 4px;
+					line-height: 32px;
+				}
+			}
 			.info-detail {
 				p {
 					font-weight: 700;
@@ -271,6 +279,10 @@ p {
 		padding: 20px;
 		margin: auto;
 		color: $teal-dark;
+		a {
+			text-decoration: none;
+			color: $teal-dark;
+		}
 	}
 }
 .logo-container {
