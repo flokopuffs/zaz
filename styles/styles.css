@@ -45,6 +45,161 @@ p {
   box-shadow: 0px 10px 5px 5px rgba(0, 0, 0, 0.1);
 }
 
+.content-wrap .double-col {
+  width: 100%;
+  height: 570px;
+}
+
+.content-wrap .double-col .hospitality {
+  float: left;
+  height: 570px;
+  width: 512px;
+  background-image: url("../images/hosp.png");
+  background-size: 100%;
+}
+
+.content-wrap .double-col .hospitality .hospitality-overlay {
+  background-color: rgba(43, 48, 58, 0.8);
+  height: 54%;
+}
+
+.content-wrap .double-col .hospitality .hospitality-overlay .hospitality-text {
+  padding: 40px 0px 0px 40px;
+}
+
+.content-wrap .double-col .hospitality .hospitality-overlay .hospitality-text .hospitality-title {
+  color: #FFF;
+  text-transform: uppercase;
+  letter-spacing: 12px;
+  font-family: 'Avenir';
+  font-weight: 100;
+  font-size: 26px;
+}
+
+.content-wrap .double-col .hospitality .hospitality-overlay .hospitality-text .hospitality-detail {
+  width: 350px;
+}
+
+.content-wrap .double-col .hospitality .hospitality-overlay .hospitality-text .hospitality-detail p {
+  font-size: 9px;
+  letter-spacing: 4px;
+  line-height: 20px;
+}
+
+.content-wrap .double-col .residential {
+  float: left;
+  height: 570px;
+  width: 512px;
+  background-image: url("../images/resi.png");
+  background-size: 100%;
+}
+
+.content-wrap .double-col .residential .residential-overlay {
+  position: relative;
+  top: 342px;
+  background-color: rgba(53, 72, 76, 0.9);
+  height: 40%;
+}
+
+.content-wrap .double-col .residential .residential-overlay .residential-text {
+  padding: 20px 0px 0px 40px;
+}
+
+.content-wrap .double-col .residential .residential-overlay .residential-text .residential-title {
+  color: #FFF;
+  text-transform: uppercase;
+  letter-spacing: 12px;
+  font-family: 'Avenir';
+  font-weight: 100;
+  font-size: 26px;
+}
+
+.content-wrap .double-col .residential .residential-overlay .residential-text .residential-detail {
+  width: 350px;
+}
+
+.content-wrap .double-col .residential .residential-overlay .residential-text .residential-detail p {
+  font-size: 9px;
+  letter-spacing: 4px;
+  line-height: 20px;
+}
+
+.content-wrap .double-col .weddings {
+  float: left;
+  height: 570px;
+  width: 512px;
+  background-image: url("../images/wedd.png");
+  background-size: 100%;
+}
+
+.content-wrap .double-col .weddings .weddings-overlay {
+  position: relative;
+  top: 285px;
+  background-color: rgba(53, 56, 76, 0.9);
+  height: 50%;
+}
+
+.content-wrap .double-col .weddings .weddings-overlay .weddings-text {
+  padding: 20px 0px 0px 40px;
+}
+
+.content-wrap .double-col .weddings .weddings-overlay .weddings-text .weddings-title {
+  color: #FFF;
+  text-transform: uppercase;
+  letter-spacing: 12px;
+  font-family: 'Avenir';
+  font-weight: 100;
+  font-size: 26px;
+}
+
+.content-wrap .double-col .weddings .weddings-overlay .weddings-text .weddings-detail {
+  width: 350px;
+}
+
+.content-wrap .double-col .weddings .weddings-overlay .weddings-text .weddings-detail p {
+  font-size: 9px;
+  letter-spacing: 4px;
+  line-height: 20px;
+}
+
+.content-wrap .double-col .parties {
+  float: left;
+  height: 570px;
+  width: 512px;
+  background-image: url("../images/part.png");
+  background-size: 100%;
+}
+
+.content-wrap .double-col .parties .parties-overlay {
+  position: relative;
+  top: 342px;
+  background-color: rgba(178, 117, 81, 0.6);
+  height: 40%;
+}
+
+.content-wrap .double-col .parties .parties-overlay .parties-text {
+  padding: 20px 0px 0px 40px;
+}
+
+.content-wrap .double-col .parties .parties-overlay .parties-text .parties-title {
+  color: #FFF;
+  text-transform: uppercase;
+  letter-spacing: 12px;
+  font-family: 'Avenir';
+  font-weight: 100;
+  font-size: 26px;
+}
+
+.content-wrap .double-col .parties .parties-overlay .parties-text .parties-detail {
+  width: 350px;
+}
+
+.content-wrap .double-col .parties .parties-overlay .parties-text .parties-detail p {
+  font-size: 9px;
+  letter-spacing: 4px;
+  line-height: 20px;
+}
+
 .content-wrap .margarita {
   height: 440px;
   background-image: url("../images/margarita-background.png");
@@ -100,7 +255,7 @@ p {
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 4px;
   height: 40px;
-  margin-top: 10px;
+  margin-top: 18px;
   border: 1px solid white;
 }
 
@@ -185,6 +340,212 @@ p {
 .content-wrap .margarita .margarita-image img {
   float: right;
   width: 340px;
+}
+
+.content-wrap .services-title {
+  height: 80px;
+  background-color: #4A2F38;
+  border: 12px solid;
+  -webkit-border-image: url(../images/gold-texture-lighters.png) 4% repeat;
+  /* Safari 3.1-5 */
+  -o-border-image: url(../images/gold-texture-lighters.png) 4% repeat;
+  /* Opera 11-12.1 */
+  border-image: url(../images/gold-texture-lighters.png) 4% repeat;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+}
+
+.content-wrap .services-title p {
+  line-height: 80px;
+  text-align: center;
+  color: #CCC;
+  font-weight: 500;
+  font-size: 26px;
+}
+
+.content-wrap .events-title {
+  height: 80px;
+  background-color: #9D5758;
+  border: 12px solid;
+  -webkit-border-image: url(../images/gold-texture-lighters.png) 4% repeat;
+  /* Safari 3.1-5 */
+  -o-border-image: url(../images/gold-texture-lighters.png) 4% repeat;
+  /* Opera 11-12.1 */
+  border-image: url(../images/gold-texture-lighters.png) 4% repeat;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+}
+
+.content-wrap .events-title p {
+  line-height: 80px;
+  text-align: center;
+  color: #CCC;
+  font-weight: 500;
+  font-size: 26px;
+}
+
+.content-wrap .services-listing {
+  width: 734px;
+  height: 300px;
+  background-color: #4C3942;
+  padding: 60px 60px 60px 230px;
+}
+
+.content-wrap .services-listing .services-container {
+  width: 100%;
+  height: 400px;
+}
+
+.content-wrap .services-listing .services-container .services-list-1 {
+  float: left;
+  width: 300px;
+}
+
+.content-wrap .services-listing .services-container .services-list-1 p {
+  font-size: 14px;
+  line-height: 24px;
+  color: #CCC;
+  text-transform: none;
+  letter-spacing: 1;
+}
+
+.content-wrap .services-listing .services-container .services-list-2 {
+  float: left;
+  width: 300px;
+}
+
+.content-wrap .services-listing .services-container .services-list-2 p {
+  font-size: 14px;
+  line-height: 24px;
+  color: #CCC;
+  text-transform: none;
+  letter-spacing: 1;
+}
+
+.content-wrap .services-listing .buttons {
+  height: 40px;
+  width: 300px;
+}
+
+.content-wrap .services-listing .buttons a {
+  text-decoration: none;
+  height: 40px;
+  width: 300px;
+}
+
+.content-wrap .services-listing .buttons a .button-white {
+  width: 300px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  height: 40px;
+  margin-top: 218px;
+  margin-left: 130px;
+  border: 1px solid white;
+}
+
+.content-wrap .services-listing .buttons a .button-white p {
+  /* Font Styling */
+  letter-spacing: 3px;
+  font-size: 12px;
+  line-height: 40px;
+  text-align: center;
+  color: white;
+  font-family: 'Avenir';
+  text-transform: uppercase;
+  height: 40px;
+}
+
+.content-wrap .services-listing .buttons a .button-white:hover {
+  cursor: pointer;
+  background-color: #FFF;
+}
+
+.content-wrap .services-listing .buttons a .button-white:hover p {
+  color: #3b6468;
+  font-weight: 500;
+}
+
+.content-wrap .events-listing {
+  width: 734px;
+  height: 300px;
+  background-color: #894141;
+  padding: 60px 60px 60px 230px;
+}
+
+.content-wrap .events-listing .events-container {
+  width: 100%;
+  height: 400px;
+}
+
+.content-wrap .events-listing .events-container .events-list-1 {
+  float: left;
+  width: 300px;
+}
+
+.content-wrap .events-listing .events-container .events-list-1 p {
+  font-size: 14px;
+  line-height: 24px;
+  color: #CCC;
+  text-transform: none;
+  letter-spacing: 1;
+}
+
+.content-wrap .events-listing .events-container .events-list-2 {
+  float: left;
+  width: 300px;
+}
+
+.content-wrap .events-listing .events-container .events-list-2 p {
+  font-size: 14px;
+  line-height: 24px;
+  color: #CCC;
+  text-transform: none;
+  letter-spacing: 1;
+}
+
+.content-wrap .events-listing .buttons {
+  height: 40px;
+  width: 300px;
+}
+
+.content-wrap .events-listing .buttons a {
+  text-decoration: none;
+  height: 40px;
+  width: 300px;
+}
+
+.content-wrap .events-listing .buttons a .button-white {
+  width: 300px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  height: 40px;
+  margin-top: 218px;
+  margin-left: 130px;
+  border: 1px solid white;
+}
+
+.content-wrap .events-listing .buttons a .button-white p {
+  /* Font Styling */
+  letter-spacing: 3px;
+  font-size: 12px;
+  line-height: 40px;
+  text-align: center;
+  color: white;
+  font-family: 'Avenir';
+  text-transform: uppercase;
+  height: 40px;
+}
+
+.content-wrap .events-listing .buttons a .button-white:hover {
+  cursor: pointer;
+  background-color: #FFF;
+}
+
+.content-wrap .events-listing .buttons a .button-white:hover p {
+  color: #3b6468;
+  font-weight: 500;
 }
 
 .content-wrap .packages {
@@ -297,7 +658,7 @@ p {
 .content-wrap .favicon-center .favicon-container {
   height: 40px;
   margin: 0 auto;
-  width: 260px;
+  width: 306px;
   display: block;
   padding: 10px 2px;
 }
@@ -331,7 +692,7 @@ p {
 
 .logo-container {
   width: 300px;
-  height: 150px;
+  height: 140px;
   overflow: visible;
   float: left;
   position: relative;
