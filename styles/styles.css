@@ -200,6 +200,84 @@ p {
   line-height: 20px;
 }
 
+.content-wrap .double-col .press-1 {
+  float: left;
+  height: 570px;
+  width: 412px;
+  padding: 0px 50px;
+  background-color: rgba(178, 117, 81, 0.3);
+  background-size: 100%;
+}
+
+.content-wrap .double-col .press-1 .weddings-overlay {
+  position: relative;
+  top: 50px;
+  background-image: url("../images/wedd.png");
+  height: 45%;
+}
+
+.content-wrap .double-col .press-1 .weddings-overlay .weddings-text {
+  padding: 20px 0px 0px 40px;
+}
+
+.content-wrap .double-col .press-1 .weddings-overlay .weddings-text .weddings-title {
+  color: #FFF;
+  text-transform: uppercase;
+  letter-spacing: 12px;
+  font-family: 'Avenir';
+  font-weight: 100;
+  font-size: 26px;
+}
+
+.content-wrap .double-col .press-1 .weddings-overlay .weddings-text .weddings-detail {
+  width: 350px;
+}
+
+.content-wrap .double-col .press-1 .weddings-overlay .weddings-text .weddings-detail p {
+  font-size: 9px;
+  letter-spacing: 4px;
+  line-height: 20px;
+}
+
+.content-wrap .double-col .press-2 {
+  float: left;
+  height: 570px;
+  width: 412px;
+  padding: 0px 50px;
+  background-color: rgba(178, 117, 81, 0.3);
+  background-size: 100%;
+}
+
+.content-wrap .double-col .press-2 .parties-overlay {
+  position: relative;
+  top: 50px;
+  background-image: url("../images/wedd.png");
+  height: 45%;
+}
+
+.content-wrap .double-col .press-2 .parties-overlay .parties-text {
+  padding: 20px 0px 0px 40px;
+}
+
+.content-wrap .double-col .press-2 .parties-overlay .parties-text .parties-title {
+  color: #FFF;
+  text-transform: uppercase;
+  letter-spacing: 12px;
+  font-family: 'Avenir';
+  font-weight: 100;
+  font-size: 26px;
+}
+
+.content-wrap .double-col .press-2 .parties-overlay .parties-text .parties-detail {
+  width: 350px;
+}
+
+.content-wrap .double-col .press-2 .parties-overlay .parties-text .parties-detail p {
+  font-size: 9px;
+  letter-spacing: 4px;
+  line-height: 20px;
+}
+
 .content-wrap .margarita {
   height: 440px;
   background-image: url("../images/margarita-background.png");
@@ -379,6 +457,28 @@ p {
 }
 
 .content-wrap .events-title p {
+  line-height: 80px;
+  text-align: center;
+  color: #CCC;
+  font-weight: 500;
+  font-size: 26px;
+}
+
+.content-wrap .press-title {
+  height: 80px;
+  background-color: #333;
+  border: 8px solid;
+  -webkit-border-image: url(../images/gold-texture-lighters.png) 4% repeat;
+  /* Safari 3.1-5 */
+  -o-border-image: url(../images/gold-texture-lighters.png) 4% repeat;
+  /* Opera 11-12.1 */
+  border-image: url(../images/gold-texture-lighters.png) 4% repeat;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+}
+
+.content-wrap .press-title p {
   line-height: 80px;
   text-align: center;
   color: #CCC;
