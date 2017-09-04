@@ -292,7 +292,7 @@ p {
 }
 
 .content-wrap .margarita {
-  height: 340px;
+  height: 338px;
   background-image: url("../images/zaz-main-img.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
@@ -904,7 +904,7 @@ p {
 }
 
 .content-wrap .packages .package-icons a img {
-  margin-left: 60px;
+  margin-left: 45px;
   height: 64px;
   margin-top: 15px;
 }
