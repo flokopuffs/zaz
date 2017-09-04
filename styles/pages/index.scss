@@ -154,18 +154,26 @@ p {
 				}
 			}
 		}
+	}
+	.double-col-press {
+		width: 100%;
+		height: 470px;
 		.press-1 { 
 			float:left;
-			height: 570px;
-			width: 412px;
+			height: 470px;
+			width: 250px;
 			padding: 0px 50px;
+			padding-left: 200px;
 			background-color: rgba(178, 117, 81, .3);
 			background-size: 100%;
 			.weddings-overlay {
 				position: relative;
 				top: 50px;
-				background-image: url('../images/wedd.png');
-				height: 45%;
+				background-image: url('../images/hospitality_design.jpg');
+				background-size: 100%;
+				background-repeat: no-repeat;
+				height: 350px;
+				width: 270px;
 				.weddings-text {
 					padding: 20px 0px 0px 40px;
 					.weddings-title {
@@ -189,16 +197,20 @@ p {
 		}
 		.press-2 { 
 			float:left;
-			height: 570px;
-			width: 412px;
+			height: 470px;
+			width: 250px;
 			padding: 0px 50px;
+			padding-right: 224px;
 			background-color: rgba(178, 117, 81, .3);
 			background-size: 100%;
 			.parties-overlay {
 				position: relative;
 				top: 50px;
-				background-image: url('../images/wedd.png');
-				height: 45%;
+				background-image: url('../images/boston_voyager.png');
+				background-size: 100%;
+				background-repeat: no-repeat;
+				height: 350px;
+				width: 270px;
 				.parties-text {
 					padding: 20px 0px 0px 40px;
 					.parties-title {
@@ -222,12 +234,14 @@ p {
 		}
 	}
 	.margarita {
-		height: 440px;
-		background-image: url('../images/margarita-background.png');
+		height: 340px;
+		background-image: url('../images/zaz-main-img.jpg');
 		background-size: 100%;
+		background-repeat: no-repeat;
 		padding: 40px 0px 0px 80px;
 		.margarita-text {
 			float: left;
+			margin: auto;
 			width: 400px;
 			h1 {
 				color: #FFF;
@@ -264,11 +278,10 @@ p {
 					text-decoration: none;
 				}
 				.button-white {
-					width: 300px;
 					background-color: rgba(255,255,255,.2);
 					border-radius: 4px;
 					height: 40px;
-					margin-top: 18px;
+					margin: 0 auto;
 					border: 1px solid white;
 					p {
 						/* Font Styling */
@@ -341,14 +354,144 @@ p {
 		}
 		.margarita-image-index {
 			img {
-				float: right;
-				width: 420px;
+				width: 520px;
 			}
 		}
 		.margarita-image {
 			img {
 				float: right;
 				width: 340px;
+			}
+		}
+	}
+	.margarita-contact {
+		height: 460px;
+		background-image: url('../images/margarita-background.png');
+		background-size: 100%;
+		background-repeat: no-repeat;
+		padding: 40px 0px 0px 80px;
+		.margarita-text {
+			float: left;
+			margin: auto;
+			width: 400px;
+			h1 {
+				color: #FFF;
+				text-transform: uppercase;
+				letter-spacing: 12px;
+				font-family: 'Avenir';
+				font-weight: 100;
+				font-size: 26px;
+			}
+			.subtitle {
+				width: 350px;
+				p {
+					font-size: 12px;
+					letter-spacing: 4px;
+					line-height: 32px;
+				}
+			}
+			.attributions {
+				width: 600px;
+				p {
+					font-size: 11px;
+					letter-spacing: 4px;
+					line-height: 32px;
+				}
+			}
+			.info-detail {
+				p {
+					font-weight: 700;
+					font-size: 14px;
+				}
+			}
+			.buttons {
+				a {
+					text-decoration: none;
+				}
+				.button-white {
+					background-color: rgba(255,255,255,.2);
+					border-radius: 4px;
+					height: 40px;
+					margin: 0 auto;
+					border: 1px solid white;
+					p {
+						/* Font Styling */
+						letter-spacing: 3px;
+						font-size: 12px;
+						line-height: 40px;
+						text-align: center;
+						color: white;
+						font-family: 'Avenir';
+						text-transform: uppercase;
+					}
+					&:hover {
+						cursor: pointer;
+						background-color: #FFF;
+						p {
+							color: $teal-dark;
+							font-weight: 500;
+						}
+					}
+				}
+			}
+			form {
+				p {
+					padding-top: 18px;
+					padding-bottom: 8px;
+				}
+				input[type=text], textarea {
+					border: 1px solid white;
+					background-color: rgba(255,255,255,.1);
+					height: 40px;
+					width: 400px;
+					font-family: 'Avenir';
+					color: white;
+					font-size: 17px;
+					padding: 1px 4px 0px 6px;
+					font-weight: 200;
+					&:focus {
+						border: 2px solid #f8db75;
+						outline: none;
+					}
+				}
+				textarea {
+					height: 60px;
+					padding: 6px;
+				}
+				input[type=submit] {
+					margin-left: 200px;
+					width: 200px;
+					background-color: rgba(255,255,255,.2);
+					border-radius: 4px;
+					height: 40px;
+					margin-top: 10px;
+					border: 1px solid white;
+					/* Font Styling */
+					letter-spacing: 3px;
+					font-size: 12px;
+					line-height: 35px;
+					text-align: center;
+					color: white;
+					font-family: 'Avenir';
+					text-transform: uppercase;
+					&:hover {
+						cursor: pointer;
+						background-color: #FFF;
+						color: $teal-dark;
+						font-weight: 500;
+					}
+				}
+			}
+		}
+		.margarita-image-index {
+			img {
+				width: 520px;
+			}
+		}
+		.margarita-image {
+			img {
+				float: right;
+				width: 400px;
 			}
 		}
 	}
@@ -623,7 +766,7 @@ p {
 		p {
 			float: left;
 			line-height: 100px;
-			margin-left: 200px;
+			margin-left: 300px;
 			color: #CCC;
 			margin-right: 10px;
 		}
@@ -643,13 +786,15 @@ p {
 		}
 	}
 	.about {
-		width: 864px;
+		width: 824px;
 		height: 320px;
-		background-image: url(../images/rustic-background.png);
+		background-image: url(../images/zazstudio-5963.png);
+		background-position-y: -140px;
 		background-size: 100%;
-		padding: 40px 80px;
+		padding: 40px 100px;
 		.about-text {
-			background-color: rgba(255,255,255,.8);
+			background-color: rgba(255,255,255,.9);
+			border-radius: 4px;
 			width: 390px;
 			height: 280px;
 			padding: 25px;
@@ -676,15 +821,15 @@ p {
 		}
 		.about-image {
 			float: left;
-			width: 170px;
-			height: 170px;
-			margin-top: 75px;
-			margin-left: 170px;
+			width: 200px;
+			height: 200px;
+			margin-top: 45px;
+			margin-left: 140px;
 			border-radius: 400px;
-			background-image: url(../images/profilephoto.jpg);
-			background-size: 100%;
-			background-position: 50% 50%;
-			border: 3px solid #D9E7E5;
+			background-image: url(../images/zazstudio-6275.jpg);
+			background-size: 210%;
+			background-position: 13% 30%;
+			border: 6px solid #FFF;
 		}
 	}
 	.instagram-container {
@@ -710,7 +855,7 @@ p {
 		.favicon-container {
 			height: 40px;
 			margin: 0 auto;
-			width: 306px;
+			width: 404px;
 			display: block;
 			padding: 10px 2px;
 			a {
