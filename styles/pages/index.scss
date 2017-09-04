@@ -154,6 +154,10 @@ p {
 				}
 			}
 		}
+	}
+	.double-col-press {
+		width: 100%;
+		height: 470px;
 		.press-1 { 
 			float:left;
 			height: 470px;
@@ -357,6 +361,137 @@ p {
 			img {
 				float: right;
 				width: 340px;
+			}
+		}
+	}
+	.margarita-contact {
+		height: 460px;
+		background-image: url('../images/margarita-background.png');
+		background-size: 100%;
+		background-repeat: no-repeat;
+		padding: 40px 0px 0px 80px;
+		.margarita-text {
+			float: left;
+			margin: auto;
+			width: 400px;
+			h1 {
+				color: #FFF;
+				text-transform: uppercase;
+				letter-spacing: 12px;
+				font-family: 'Avenir';
+				font-weight: 100;
+				font-size: 26px;
+			}
+			.subtitle {
+				width: 350px;
+				p {
+					font-size: 12px;
+					letter-spacing: 4px;
+					line-height: 32px;
+				}
+			}
+			.attributions {
+				width: 600px;
+				p {
+					font-size: 11px;
+					letter-spacing: 4px;
+					line-height: 32px;
+				}
+			}
+			.info-detail {
+				p {
+					font-weight: 700;
+					font-size: 14px;
+				}
+			}
+			.buttons {
+				a {
+					text-decoration: none;
+				}
+				.button-white {
+					background-color: rgba(255,255,255,.2);
+					border-radius: 4px;
+					height: 40px;
+					margin: 0 auto;
+					border: 1px solid white;
+					p {
+						/* Font Styling */
+						letter-spacing: 3px;
+						font-size: 12px;
+						line-height: 40px;
+						text-align: center;
+						color: white;
+						font-family: 'Avenir';
+						text-transform: uppercase;
+					}
+					&:hover {
+						cursor: pointer;
+						background-color: #FFF;
+						p {
+							color: $teal-dark;
+							font-weight: 500;
+						}
+					}
+				}
+			}
+			form {
+				p {
+					padding-top: 18px;
+					padding-bottom: 8px;
+				}
+				input[type=text], textarea {
+					border: 1px solid white;
+					background-color: rgba(255,255,255,.1);
+					height: 40px;
+					width: 400px;
+					font-family: 'Avenir';
+					color: white;
+					font-size: 17px;
+					padding: 1px 4px 0px 6px;
+					font-weight: 200;
+					&:focus {
+						border: 2px solid #f8db75;
+						outline: none;
+					}
+				}
+				textarea {
+					height: 60px;
+					padding: 6px;
+				}
+				input[type=submit] {
+					margin-left: 200px;
+					width: 200px;
+					background-color: rgba(255,255,255,.2);
+					border-radius: 4px;
+					height: 40px;
+					margin-top: 10px;
+					border: 1px solid white;
+					/* Font Styling */
+					letter-spacing: 3px;
+					font-size: 12px;
+					line-height: 35px;
+					text-align: center;
+					color: white;
+					font-family: 'Avenir';
+					text-transform: uppercase;
+					&:hover {
+						cursor: pointer;
+						background-color: #FFF;
+						color: $teal-dark;
+						font-weight: 500;
+					}
+				}
+			}
+		}
+		.margarita-image-index {
+			img {
+				width: 520px;
+			}
+		}
+		.margarita-image {
+			img {
+				float: right;
+				width: 400px;
 			}
 		}
 	}

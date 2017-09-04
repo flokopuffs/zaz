@@ -200,7 +200,12 @@ p {
   line-height: 20px;
 }
 
-.content-wrap .double-col .press-1 {
+.content-wrap .double-col-press {
+  width: 100%;
+  height: 470px;
+}
+
+.content-wrap .double-col-press .press-1 {
   float: left;
   height: 470px;
   width: 250px;
@@ -210,7 +215,7 @@ p {
   background-size: 100%;
 }
 
-.content-wrap .double-col .press-1 .weddings-overlay {
+.content-wrap .double-col-press .press-1 .weddings-overlay {
   position: relative;
   top: 50px;
   background-image: url("../images/hospitality_design.jpg");
@@ -220,11 +225,11 @@ p {
   width: 270px;
 }
 
-.content-wrap .double-col .press-1 .weddings-overlay .weddings-text {
+.content-wrap .double-col-press .press-1 .weddings-overlay .weddings-text {
   padding: 20px 0px 0px 40px;
 }
 
-.content-wrap .double-col .press-1 .weddings-overlay .weddings-text .weddings-title {
+.content-wrap .double-col-press .press-1 .weddings-overlay .weddings-text .weddings-title {
   color: #FFF;
   text-transform: uppercase;
   letter-spacing: 12px;
@@ -233,17 +238,17 @@ p {
   font-size: 26px;
 }
 
-.content-wrap .double-col .press-1 .weddings-overlay .weddings-text .weddings-detail {
+.content-wrap .double-col-press .press-1 .weddings-overlay .weddings-text .weddings-detail {
   width: 350px;
 }
 
-.content-wrap .double-col .press-1 .weddings-overlay .weddings-text .weddings-detail p {
+.content-wrap .double-col-press .press-1 .weddings-overlay .weddings-text .weddings-detail p {
   font-size: 9px;
   letter-spacing: 4px;
   line-height: 20px;
 }
 
-.content-wrap .double-col .press-2 {
+.content-wrap .double-col-press .press-2 {
   float: left;
   height: 470px;
   width: 250px;
@@ -253,7 +258,7 @@ p {
   background-size: 100%;
 }
 
-.content-wrap .double-col .press-2 .parties-overlay {
+.content-wrap .double-col-press .press-2 .parties-overlay {
   position: relative;
   top: 50px;
   background-image: url("../images/boston_voyager.png");
@@ -263,11 +268,11 @@ p {
   width: 270px;
 }
 
-.content-wrap .double-col .press-2 .parties-overlay .parties-text {
+.content-wrap .double-col-press .press-2 .parties-overlay .parties-text {
   padding: 20px 0px 0px 40px;
 }
 
-.content-wrap .double-col .press-2 .parties-overlay .parties-text .parties-title {
+.content-wrap .double-col-press .press-2 .parties-overlay .parties-text .parties-title {
   color: #FFF;
   text-transform: uppercase;
   letter-spacing: 12px;
@@ -276,11 +281,11 @@ p {
   font-size: 26px;
 }
 
-.content-wrap .double-col .press-2 .parties-overlay .parties-text .parties-detail {
+.content-wrap .double-col-press .press-2 .parties-overlay .parties-text .parties-detail {
   width: 350px;
 }
 
-.content-wrap .double-col .press-2 .parties-overlay .parties-text .parties-detail p {
+.content-wrap .double-col-press .press-2 .parties-overlay .parties-text .parties-detail p {
   font-size: 9px;
   letter-spacing: 4px;
   line-height: 20px;
@@ -426,6 +431,148 @@ p {
 .content-wrap .margarita .margarita-image img {
   float: right;
   width: 340px;
+}
+
+.content-wrap .margarita-contact {
+  height: 460px;
+  background-image: url("../images/margarita-background.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding: 40px 0px 0px 80px;
+}
+
+.content-wrap .margarita-contact .margarita-text {
+  float: left;
+  margin: auto;
+  width: 400px;
+}
+
+.content-wrap .margarita-contact .margarita-text h1 {
+  color: #FFF;
+  text-transform: uppercase;
+  letter-spacing: 12px;
+  font-family: 'Avenir';
+  font-weight: 100;
+  font-size: 26px;
+}
+
+.content-wrap .margarita-contact .margarita-text .subtitle {
+  width: 350px;
+}
+
+.content-wrap .margarita-contact .margarita-text .subtitle p {
+  font-size: 12px;
+  letter-spacing: 4px;
+  line-height: 32px;
+}
+
+.content-wrap .margarita-contact .margarita-text .attributions {
+  width: 600px;
+}
+
+.content-wrap .margarita-contact .margarita-text .attributions p {
+  font-size: 11px;
+  letter-spacing: 4px;
+  line-height: 32px;
+}
+
+.content-wrap .margarita-contact .margarita-text .info-detail p {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.content-wrap .margarita-contact .margarita-text .buttons a {
+  text-decoration: none;
+}
+
+.content-wrap .margarita-contact .margarita-text .buttons .button-white {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  height: 40px;
+  margin: 0 auto;
+  border: 1px solid white;
+}
+
+.content-wrap .margarita-contact .margarita-text .buttons .button-white p {
+  /* Font Styling */
+  letter-spacing: 3px;
+  font-size: 12px;
+  line-height: 40px;
+  text-align: center;
+  color: white;
+  font-family: 'Avenir';
+  text-transform: uppercase;
+}
+
+.content-wrap .margarita-contact .margarita-text .buttons .button-white:hover {
+  cursor: pointer;
+  background-color: #FFF;
+}
+
+.content-wrap .margarita-contact .margarita-text .buttons .button-white:hover p {
+  color: #3b6468;
+  font-weight: 500;
+}
+
+.content-wrap .margarita-contact .margarita-text form p {
+  padding-top: 18px;
+  padding-bottom: 8px;
+}
+
+.content-wrap .margarita-contact .margarita-text form input[type=text], .content-wrap .margarita-contact .margarita-text form textarea {
+  border: 1px solid white;
+  background-color: rgba(255, 255, 255, 0.1);
+  height: 40px;
+  width: 400px;
+  font-family: 'Avenir';
+  color: white;
+  font-size: 17px;
+  padding: 1px 4px 0px 6px;
+  font-weight: 200;
+}
+
+.content-wrap .margarita-contact .margarita-text form input[type=text]:focus, .content-wrap .margarita-contact .margarita-text form textarea:focus {
+  border: 2px solid #f8db75;
+  outline: none;
+}
+
+.content-wrap .margarita-contact .margarita-text form textarea {
+  height: 60px;
+  padding: 6px;
+}
+
+.content-wrap .margarita-contact .margarita-text form input[type=submit] {
+  margin-left: 200px;
+  width: 200px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  height: 40px;
+  margin-top: 10px;
+  border: 1px solid white;
+  /* Font Styling */
+  letter-spacing: 3px;
+  font-size: 12px;
+  line-height: 35px;
+  text-align: center;
+  color: white;
+  font-family: 'Avenir';
+  text-transform: uppercase;
+}
+
+.content-wrap .margarita-contact .margarita-text form input[type=submit]:hover {
+  cursor: pointer;
+  background-color: #FFF;
+  color: #3b6468;
+  font-weight: 500;
+}
+
+.content-wrap .margarita-contact .margarita-image-index img {
+  width: 520px;
+}
+
+.content-wrap .margarita-contact .margarita-image img {
+  float: right;
+  width: 400px;
 }
 
 .content-wrap .services-title {
