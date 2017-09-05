@@ -342,98 +342,12 @@ p {
 
 .content-wrap .double-col-edecor {
   width: 100%;
-  height: 670px;
-}
-
-.content-wrap .double-col-edecor .press-1 {
-  float: left;
-  height: 470px;
-  width: 250px;
-  padding: 0px 50px;
-  padding-left: 200px;
-  background-color: rgba(178, 117, 81, 0.3);
-  background-size: 100%;
-}
-
-.content-wrap .double-col-edecor .press-1 .weddings-overlay {
-  position: relative;
-  top: 50px;
-  background-image: url("../images/hospitality_design.jpg");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  height: 350px;
-  width: 270px;
-}
-
-.content-wrap .double-col-edecor .press-1 .weddings-overlay .weddings-text {
-  padding: 20px 0px 0px 40px;
-}
-
-.content-wrap .double-col-edecor .press-1 .weddings-overlay .weddings-text .weddings-title {
-  color: #FFF;
-  text-transform: uppercase;
-  letter-spacing: 12px;
-  font-family: 'Avenir';
-  font-weight: 100;
-  font-size: 26px;
-}
-
-.content-wrap .double-col-edecor .press-1 .weddings-overlay .weddings-text .weddings-detail {
-  width: 350px;
-}
-
-.content-wrap .double-col-edecor .press-1 .weddings-overlay .weddings-text .weddings-detail p {
-  font-size: 9px;
-  letter-spacing: 4px;
-  line-height: 20px;
-}
-
-.content-wrap .double-col-edecor .press-2 {
-  float: left;
-  height: 470px;
-  width: 250px;
-  padding: 0px 50px;
-  padding-right: 224px;
-  background-color: rgba(178, 117, 81, 0.3);
-  background-size: 100%;
-}
-
-.content-wrap .double-col-edecor .press-2 .parties-overlay {
-  position: relative;
-  top: 50px;
-  background-image: url("../images/boston_voyager.png");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  height: 350px;
-  width: 270px;
-}
-
-.content-wrap .double-col-edecor .press-2 .parties-overlay .parties-text {
-  padding: 20px 0px 0px 40px;
-}
-
-.content-wrap .double-col-edecor .press-2 .parties-overlay .parties-text .parties-title {
-  color: #FFF;
-  text-transform: uppercase;
-  letter-spacing: 12px;
-  font-family: 'Avenir';
-  font-weight: 100;
-  font-size: 26px;
-}
-
-.content-wrap .double-col-edecor .press-2 .parties-overlay .parties-text .parties-detail {
-  width: 350px;
-}
-
-.content-wrap .double-col-edecor .press-2 .parties-overlay .parties-text .parties-detail p {
-  font-size: 9px;
-  letter-spacing: 4px;
-  line-height: 20px;
+  height: 910px;
 }
 
 .content-wrap .double-col-edecor .edecor-about {
   float: left;
-  height: 670px;
+  height: 910px;
   width: 750px;
   padding: 0px 50px;
   padding-left: 224px;
@@ -447,7 +361,7 @@ p {
   background-color: rgba(255, 255, 255, 0.8);
   background-size: 100%;
   background-repeat: no-repeat;
-  height: 550px;
+  height: 790px;
   width: 530px;
 }
 
