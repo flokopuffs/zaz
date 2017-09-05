@@ -291,8 +291,111 @@ p {
   line-height: 20px;
 }
 
+.content-wrap .double-col-press .edecor-about {
+  float: left;
+  height: 870px;
+  width: 750px;
+  padding: 0px 50px;
+  padding-left: 224px;
+  background-color: rgba(178, 117, 81, 0.3);
+  background-size: 100%;
+}
+
+.content-wrap .double-col-press .edecor-about .parties-overlay {
+  position: relative;
+  top: 50px;
+  background-color: rgba(255, 255, 255, 0.8);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 550px;
+  width: 530px;
+}
+
+.content-wrap .double-col-press .edecor-about .parties-overlay .parties-text {
+  padding: 20px 0px 0px 40px;
+}
+
+.content-wrap .double-col-press .edecor-about .parties-overlay .parties-text .parties-title {
+  color: #FFF;
+  text-transform: uppercase;
+  letter-spacing: 12px;
+  font-family: 'Avenir';
+  font-weight: 100;
+  font-size: 26px;
+}
+
+.content-wrap .double-col-press .edecor-about .parties-overlay .parties-text .parties-detail {
+  width: 450px;
+}
+
+.content-wrap .double-col-press .edecor-about .parties-overlay .parties-text .parties-detail h1 {
+  font-family: "Avenir";
+}
+
+.content-wrap .double-col-press .edecor-about .parties-overlay .parties-text .parties-detail p {
+  font-size: 11px;
+  letter-spacing: 1px;
+  line-height: 20px;
+  color: #444;
+  font-family: "Avenir";
+}
+
+.content-wrap .double-col-edecor {
+  width: 100%;
+  height: 910px;
+}
+
+.content-wrap .double-col-edecor .edecor-about {
+  float: left;
+  height: 910px;
+  width: 750px;
+  padding: 0px 50px;
+  padding-left: 224px;
+  background-color: rgba(178, 117, 81, 0.3);
+  background-size: 100%;
+}
+
+.content-wrap .double-col-edecor .edecor-about .parties-overlay {
+  position: relative;
+  top: 50px;
+  background-color: rgba(255, 255, 255, 0.8);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 790px;
+  width: 530px;
+}
+
+.content-wrap .double-col-edecor .edecor-about .parties-overlay .parties-text {
+  padding: 20px 0px 0px 40px;
+}
+
+.content-wrap .double-col-edecor .edecor-about .parties-overlay .parties-text .parties-title {
+  color: #FFF;
+  text-transform: uppercase;
+  letter-spacing: 12px;
+  font-family: 'Avenir';
+  font-weight: 100;
+  font-size: 26px;
+}
+
+.content-wrap .double-col-edecor .edecor-about .parties-overlay .parties-text .parties-detail {
+  width: 450px;
+}
+
+.content-wrap .double-col-edecor .edecor-about .parties-overlay .parties-text .parties-detail h1 {
+  font-family: "Avenir";
+}
+
+.content-wrap .double-col-edecor .edecor-about .parties-overlay .parties-text .parties-detail p {
+  font-size: 11px;
+  letter-spacing: 1px;
+  line-height: 20px;
+  color: #444;
+  font-family: "Avenir";
+}
+
 .content-wrap .margarita {
-  height: 340px;
+  height: 338px;
   background-image: url("../images/zaz-main-img.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
@@ -904,7 +1007,7 @@ p {
 }
 
 .content-wrap .packages .package-icons a img {
-  margin-left: 60px;
+  margin-left: 45px;
   height: 64px;
   margin-top: 15px;
 }
