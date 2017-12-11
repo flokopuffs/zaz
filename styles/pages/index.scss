@@ -206,7 +206,7 @@ p {
 			.parties-overlay {
 				position: relative;
 				top: 50px;
-				background-image: url('../images/boston_voyager.png');
+				background-image: url('../images/boston_voyager.jpg');
 				background-size: 100%;
 				background-repeat: no-repeat;
 				height: 350px;
@@ -234,7 +234,7 @@ p {
 		}
 		.edecor-about { 
 			float:left;
-			height: 870px;
+			height: 1170px;
 			width: 750px;
 			padding: 0px 50px;
 			padding-left: 224px;
@@ -246,7 +246,7 @@ p {
 				background-color: rgba(255,255,255,.8);
 				background-size: 100%;
 				background-repeat: no-repeat;
-				height: 550px;
+				height: 850px;
 				width: 530px;
 				.parties-text {
 					padding: 20px 0px 0px 40px;
@@ -277,10 +277,10 @@ p {
 	}
 	.double-col-edecor {
 		width: 100%;
-		height: 820px;
+		height: 1220px;
 		.edecor-about { 
-			float:left;
-			height: 820px;
+			float: left;
+			height: 1220px;
 			width: 836px;
 			padding: 0px 50px;
 			padding-left: 138px;
@@ -292,8 +292,9 @@ p {
 				background-color: rgba(255,255,255,.8);
 				background-size: 100%;
 				background-repeat: no-repeat;
-				height: 670px;
+				height: 730px;
 				width: 750px;
+				margin-top: 55px;
 				.parties-text {
 					padding: 40px 0px 0px 70px;
 					.parties-title {
@@ -309,6 +310,7 @@ p {
 						h1 {
 							font-family: "Avenir";
 							text-align: center;
+							font-size: 30px;
 						}
 						p {
 							font-size: 10px;
@@ -316,6 +318,51 @@ p {
 							line-height: 20px;
 							color: #444;
 							font-family: "Avenir";
+						}
+					}
+				}
+			}
+			.havenly-overlay {
+				position: relative;
+				top: 50px;
+				background-color: rgba(255,255,255,.8);
+				background-size: 100%;
+				background-repeat: no-repeat;
+				height: 250px;
+				width: 750px;
+				.havenly-text {
+					padding: 40px 0px 0px 0px;
+					.parties-title {
+						color: #FFF;
+						text-transform: uppercase;
+						letter-spacing: 12px;
+						font-family: 'Avenir';
+						font-weight: 100;
+						font-size: 26px;
+					}
+					.havenly-detail {
+						width: 610px;
+						text-align: center;
+						h1 {
+							font-family: "Avenir";
+							text-align: center;
+							padding-left: 140px;
+						}
+						p {
+							font-size: 10px;
+							letter-spacing: 1px;
+							line-height: 12px;
+							color: #444;
+							font-family: "Avenir";
+							padding-left: 140px;
+						}
+						.havenly-promo {
+							background-image: url('../images/favicons/havenly-long.jpg');
+							background-size: contain;
+							height: 50px;
+							width: 136px;
+							margin-left: 305px;
+							border: 1px solid rgba(0,0,0,.4);
 						}
 					}
 				}
@@ -328,6 +375,13 @@ p {
 		background-size: 100%;
 		background-repeat: no-repeat;
 		padding: 40px 0px 0px 80px;
+		border: 6px solid;
+		-webkit-border-image: url(../images/gold-texture-lighters.png) 4% repeat; /* Safari 3.1-5 */
+	    -o-border-image: url(../images/gold-texture-lighters.png) 4% repeat; /* Opera 11-12.1 */
+		border-image: url(../images/gold-texture-lighters.png) 4% repeat;
+		border-left: 0;
+		border-right: 0;
+		border-bottom: 0;
 		.margarita-text {
 			float: left;
 			margin: auto;
@@ -845,7 +899,7 @@ p {
 	.packages {
 		height: 100px;
 		background-color: #313131;
-		border: 12px solid;
+		border: 6px solid;
 		-webkit-border-image: url(../images/gold-texture-lighters.png) 4% repeat; /* Safari 3.1-5 */
 	    -o-border-image: url(../images/gold-texture-lighters.png) 4% repeat; /* Opera 11-12.1 */
 		border-image: url(../images/gold-texture-lighters.png) 4% repeat;
@@ -944,7 +998,7 @@ p {
 		.favicon-container {
 			height: 40px;
 			margin: 0 auto;
-			width: 404px;
+			width: 515px;
 			display: block;
 			padding: 10px 2px;
 			a {
@@ -974,25 +1028,25 @@ p {
 	}
 }
 .logo-container {
-	width: 300px;
-	height: 140px;
+	width: 135px;
+	height: 63px;
 	overflow: visible;
 	float: left;
 	position: relative;
 }
 .logo-container img {
 	width: 100%;
-	margin-top: 10px;
-	margin-left: 40px;
+	margin-top: 0px;
+	margin-left: 20px;
 }
 header {
 	background-color: white;
 	height: 140px;
 	box-shadow: 0px 5px 0px 0px rgba(0,0,0,.9);
-	background-image: url("../images/golden-geode.png");
-	background-size: 600px 300px;
+	background-image: url("../images/logo-Z.png");
+	background-size: contain;
 	background-repeat: no-repeat;
-	background-position: right;
+	background-position: 50% 50%;
 }
 .main-nav {
 	padding-top: 75px;
@@ -1012,7 +1066,6 @@ header {
 }
 .main-nav a {
 	display: inline-block;
-	width: 65px;
 	/* FONT */
 	text-align: center;
 	font-family: arial;
@@ -1021,10 +1074,7 @@ header {
 	color: #616161;
 	/* PADDING */
 	margin-left: 3px;
-	background-color: rgba(255,255,255,.7);
 	padding: 16px 8px 8px;
-	border-top: 3px solid #5F5F5F;
-	box-shadow: 0px 1px 3px 0px #919191;
 }
 .main-nav a:hover {
 	cursor: pointer;
@@ -1059,7 +1109,7 @@ p {
 		height: 30px;
 		padding: 0;
 		margin: auto;
-		width: 350px;
+		width: 640px;
 	}
 	.icon {
 		height: 35px;
