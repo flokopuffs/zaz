@@ -375,10 +375,7 @@ p {
 		background-size: 100%;
 		background-repeat: no-repeat;
 		padding: 40px 0px 0px 80px;
-		border: 6px solid;
-		-webkit-border-image: url(../images/gold-texture-lighters.png) 4% repeat; /* Safari 3.1-5 */
-	    -o-border-image: url(../images/gold-texture-lighters.png) 4% repeat; /* Opera 11-12.1 */
-		border-image: url(../images/gold-texture-lighters.png) 4% repeat;
+		border: 2px solid #313131;
 		border-left: 0;
 		border-right: 0;
 		border-bottom: 0;
