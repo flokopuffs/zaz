@@ -1,0 +1,20 @@
+.attributions {
+	height: 460px;
+	background-image: url('../images/margarita-background.jpg');
+	background-size: 100%;
+	background-repeat: no-repeat;
+	padding: 40px 0px 0px 80px;
+	.attributions-text {
+		float: left;
+		margin: auto;
+		width: 400px;
+		.attribution-list {
+			width: 600px;
+			p {
+				font-size: 11px;
+				letter-spacing: 4px;
+				line-height: 32px;
+			}
+		}
+	}
+}

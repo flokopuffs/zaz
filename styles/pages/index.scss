@@ -15,7 +15,7 @@ p {
 	color: #FFF;
 	text-transform: uppercase;
 	letter-spacing: 12px;
-	font-family: 'Avenir';
+	font-family: 'Avenir', $helvetica;
 }
 .content-wrap {
 	width: 1024px;
@@ -25,351 +25,64 @@ p {
 	border-top: none;
 	border-bottom: none;
 	box-shadow: 0px 10px 5px 5px rgba(0,0,0,.1);
-	.double-col {
-		width: 100%;
-		height: 570px;
-		.hospitality { 
-			float:left;
-			height: 570px;
-			width: 512px;
-			background-image: url('../images/hosp.png');
-			background-size: 100%;
-			.hospitality-overlay {
-				background-color: rgba(43, 48, 58, .8);
-				height: 54%;
-				.hospitality-text {
-					padding: 40px 0px 0px 40px;
-					.hospitality-title {
-						color: #FFF;
-						text-transform: uppercase;
-						letter-spacing: 12px;
-						font-family: 'Avenir';
-						font-weight: 100;
-						font-size: 26px;
-					}
-					.hospitality-detail {
-						width: 350px;
-						p {
-							font-size: 9px;
-							letter-spacing: 4px;
-							line-height: 20px;
-						}
-					}
-				}
+	header {
+		background-color: white;
+		height: 140px;
+		box-shadow: 0px 5px 0px 0px rgba(0,0,0,.9);
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		.logo-container {
+			width: 135px;
+			height: 63px;
+			overflow: visible;
+			position: relative;
+			margin: 0 auto;
+			img {
+				width: 100%;
+				margin: 0 auto;
 			}
 		}
-		.residential { 
-			float:left;
-			height: 570px;
-			width: 512px;
-			background-image: url('../images/resi.png');
-			background-size: 100%;
-			.residential-overlay {
-				position: relative;
-				top: 342px;
-				background-color: rgba(53, 72, 76, .9);
-				height: 40%;
-				.residential-text {
-					padding: 20px 0px 0px 40px;
-					.residential-title {
-						color: #FFF;
-						text-transform: uppercase;
-						letter-spacing: 12px;
-						font-family: 'Avenir';
-						font-weight: 100;
-						font-size: 26px;
-					}
-					.residential-detail {
-						width: 350px;
-						p {
-							font-size: 9px;
-							letter-spacing: 4px;
-							line-height: 20px;
-						}
-					}
-				}
+		.main-nav {
+			padding-bottom: 0;
+			margin: 0;
+			float: right;
+			padding: 30px 15px 0px 0px;
+			.dropdown {		
+				display: none;
 			}
-		}
-		.weddings { 
-			float:left;
-			height: 570px;
-			width: 512px;
-			background-image: url('../images/wedd.png');
-			background-size: 100%;
-			.weddings-overlay {
-				position: relative;
-				top: 315px;
-				background-color: rgba(53, 56, 76, .9);
-				height: 45%;
-				.weddings-text {
-					padding: 20px 0px 0px 40px;
-					.weddings-title {
-						color: #FFF;
-						text-transform: uppercase;
-						letter-spacing: 12px;
-						font-family: 'Avenir';
-						font-weight: 100;
-						font-size: 26px;
-					}
-					.weddings-detail {
-						width: 350px;
-						p {
-							font-size: 9px;
-							letter-spacing: 4px;
-							line-height: 20px;
-						}
-					}
-				}
-			}
-		}
-		.parties { 
-			float:left;
-			height: 570px;
-			width: 512px;
-			background-image: url('../images/part.png');
-			background-size: 100%;
-			.parties-overlay {
-				position: relative;
-				top: 274px;
-				background-color: rgba(178, 117, 81, .6);
-				height: 52%;
-				.parties-text {
-					padding: 20px 0px 0px 40px;
-					.parties-title {
-						color: #FFF;
-						text-transform: uppercase;
-						letter-spacing: 12px;
-						font-family: 'Avenir';
-						font-weight: 100;
-						font-size: 26px;
-					}
-					.parties-detail {
-						width: 350px;
-						p {
-							font-size: 9px;
-							letter-spacing: 4px;
-							line-height: 20px;
-						}
-					}
-				}
-			}
-		}
-	}
-	.double-col-press {
-		width: 100%;
-		height: 470px;
-		.press-1 { 
-			float:left;
-			height: 470px;
-			width: 250px;
-			padding: 0px 50px;
-			padding-left: 200px;
-			background-color: rgba(178, 117, 81, .3);
-			background-size: 100%;
-			.weddings-overlay {
-				position: relative;
-				top: 50px;
-				background-image: url('../images/hospitality_design.jpg');
-				background-size: 100%;
-				background-repeat: no-repeat;
-				height: 350px;
-				width: 270px;
-				.weddings-text {
-					padding: 20px 0px 0px 40px;
-					.weddings-title {
-						color: #FFF;
-						text-transform: uppercase;
-						letter-spacing: 12px;
-						font-family: 'Avenir';
-						font-weight: 100;
-						font-size: 26px;
-					}
-					.weddings-detail {
-						width: 350px;
-						p {
-							font-size: 9px;
-							letter-spacing: 4px;
-							line-height: 20px;
-						}
-					}
-				}
-			}
-		}
-		.press-2 { 
-			float:left;
-			height: 470px;
-			width: 250px;
-			padding: 0px 50px;
-			padding-right: 224px;
-			background-color: rgba(178, 117, 81, .3);
-			background-size: 100%;
-			.parties-overlay {
-				position: relative;
-				top: 50px;
-				background-image: url('../images/boston_voyager.jpg');
-				background-size: 100%;
-				background-repeat: no-repeat;
-				height: 350px;
-				width: 270px;
-				.parties-text {
-					padding: 20px 0px 0px 40px;
-					.parties-title {
-						color: #FFF;
-						text-transform: uppercase;
-						letter-spacing: 12px;
-						font-family: 'Avenir';
-						font-weight: 100;
-						font-size: 26px;
-					}
-					.parties-detail {
-						width: 350px;
-						p {
-							font-size: 9px;
-							letter-spacing: 4px;
-							line-height: 20px;
-						}
-					}
-				}
-			}
-		}
-		.edecor-about { 
-			float:left;
-			height: 1170px;
-			width: 750px;
-			padding: 0px 50px;
-			padding-left: 224px;
-			background-color: rgba(178, 117, 81, .3);
-			background-size: 100%;
-			.parties-overlay {
-				position: relative;
-				top: 50px;
-				background-color: rgba(255,255,255,.8);
-				background-size: 100%;
-				background-repeat: no-repeat;
-				height: 850px;
-				width: 530px;
-				.parties-text {
-					padding: 20px 0px 0px 40px;
-					.parties-title {
-						color: #FFF;
-						text-transform: uppercase;
-						letter-spacing: 12px;
-						font-family: 'Avenir';
-						font-weight: 100;
-						font-size: 26px;
-					}
-					.parties-detail {
-						width: 450px;
-						h1 {
-							font-family: "Avenir";
-						}
-						p {
-							font-size: 11px;
-							letter-spacing: 1px;
-							line-height: 20px;
-							color: #444;
-							font-family: "Avenir";
-						}
-					}
-				}
-			}
-		}
-	}
-	.double-col-edecor {
-		width: 100%;
-		height: 1220px;
-		.edecor-about { 
-			float: left;
-			height: 1220px;
-			width: 836px;
-			padding: 0px 50px;
-			padding-left: 138px;
-			background-color: rgba(178, 117, 81, .3);
-			background-size: 100%;
-			.parties-overlay {
-				position: relative;
-				top: 50px;
-				background-color: rgba(255,255,255,.8);
-				background-size: 100%;
-				background-repeat: no-repeat;
-				height: 730px;
-				width: 750px;
-				margin-top: 55px;
-				.parties-text {
-					padding: 40px 0px 0px 70px;
-					.parties-title {
-						color: #FFF;
-						text-transform: uppercase;
-						letter-spacing: 12px;
-						font-family: 'Avenir';
-						font-weight: 100;
-						font-size: 26px;
-					}
-					.parties-detail {
-						width: 610px;
-						h1 {
-							font-family: "Avenir";
-							text-align: center;
-							font-size: 30px;
-						}
-						p {
-							font-size: 10px;
-							letter-spacing: 1px;
-							line-height: 20px;
-							color: #444;
-							font-family: "Avenir";
-						}
-					}
-				}
-			}
-			.havenly-overlay {
-				position: relative;
-				top: 50px;
-				background-color: rgba(255,255,255,.8);
-				background-size: 100%;
-				background-repeat: no-repeat;
-				height: 250px;
-				width: 750px;
-				.havenly-text {
-					padding: 40px 0px 0px 0px;
-					.parties-title {
-						color: #FFF;
-						text-transform: uppercase;
-						letter-spacing: 12px;
-						font-family: 'Avenir';
-						font-weight: 100;
-						font-size: 26px;
-					}
-					.havenly-detail {
-						width: 610px;
+			ul {
+				padding: 0;
+				margin: 0;
+				li {
+					list-style-type: none;
+					display: inline-block;
+					text-align: center;
+					a {
+						display: inline-block;
+						/* FONT */
 						text-align: center;
-						h1 {
-							font-family: "Avenir";
-							text-align: center;
-							padding-left: 140px;
-						}
-						p {
-							font-size: 10px;
-							letter-spacing: 1px;
-							line-height: 12px;
-							color: #444;
-							font-family: "Avenir";
-							padding-left: 140px;
-						}
-						.havenly-promo {
-							background-image: url('../images/favicons/havenly-long.jpg');
-							background-size: contain;
-							height: 50px;
-							width: 136px;
-							margin-left: 305px;
-							border: 1px solid rgba(0,0,0,.4);
+						font-family: arial;
+						font-size: 12px;
+						text-decoration: none;
+						color: #616161;
+						/* PADDING */
+						margin-left: 3px;
+						padding: 16px 8px 8px;
+						&:hover {
+							cursor: pointer;
+							color: #e0ab92;
+							background-color: rgba(255,255,255,.9);
 						}
 					}
 				}
 			}
 		}
 	}
-	.margarita {
+	p {
+		margin: 0;
+		padding: 0;
+	}
+	.black-line {
 		height: 338px;
 		background-image: url('../images/zaz-main-img.jpg');
 		background-size: 100%;
@@ -379,519 +92,6 @@ p {
 		border-left: 0;
 		border-right: 0;
 		border-bottom: 0;
-		.margarita-text {
-			float: left;
-			margin: auto;
-			width: 400px;
-			h1 {
-				color: #FFF;
-				text-transform: uppercase;
-				letter-spacing: 12px;
-				font-family: 'Avenir';
-				font-weight: 100;
-				font-size: 26px;
-			}
-			.subtitle {
-				width: 350px;
-				p {
-					font-size: 12px;
-					letter-spacing: 4px;
-					line-height: 32px;
-				}
-			}
-			.attributions {
-				width: 600px;
-				p {
-					font-size: 11px;
-					letter-spacing: 4px;
-					line-height: 32px;
-				}
-			}
-			.info-detail {
-				p {
-					font-weight: 700;
-					font-size: 14px;
-				}
-			}
-			.buttons {
-				a {
-					text-decoration: none;
-				}
-				.button-white {
-					background-color: rgba(255,255,255,.2);
-					border-radius: 4px;
-					height: 40px;
-					margin: 0 auto;
-					border: 1px solid white;
-					p {
-						/* Font Styling */
-						letter-spacing: 3px;
-						font-size: 12px;
-						line-height: 40px;
-						text-align: center;
-						color: white;
-						font-family: 'Avenir';
-						text-transform: uppercase;
-					}
-					&:hover {
-						cursor: pointer;
-						background-color: #FFF;
-						p {
-							color: $teal-dark;
-							font-weight: 500;
-						}
-					}
-				}
-			}
-			form {
-				p {
-					padding-top: 18px;
-					padding-bottom: 8px;
-				}
-				input[type=text], textarea {
-					border: 1px solid white;
-					background-color: rgba(255,255,255,.1);
-					height: 40px;
-					width: 400px;
-					font-family: 'Avenir';
-					color: white;
-					font-size: 17px;
-					padding: 1px 4px 0px 6px;
-					font-weight: 200;
-					&:focus {
-						border: 2px solid #f8db75;
-						outline: none;
-					}
-				}
-				textarea {
-					height: 60px;
-					padding: 6px;
-				}
-				input[type=submit] {
-					margin-left: 200px;
-					width: 200px;
-					background-color: rgba(255,255,255,.2);
-					border-radius: 4px;
-					height: 40px;
-					margin-top: 10px;
-					border: 1px solid white;
-					/* Font Styling */
-					letter-spacing: 3px;
-					font-size: 12px;
-					line-height: 35px;
-					text-align: center;
-					color: white;
-					font-family: 'Avenir';
-					text-transform: uppercase;
-					&:hover {
-						cursor: pointer;
-						background-color: #FFF;
-						color: $teal-dark;
-						font-weight: 500;
-					}
-				}
-			}
-		}
-		.margarita-image-index {
-			img {
-				width: 520px;
-			}
-		}
-		.margarita-image {
-			img {
-				float: right;
-				width: 340px;
-			}
-		}
-	}
-	.margarita-contact {
-		height: 460px;
-		background-image: url('../images/margarita-background.png');
-		background-size: 100%;
-		background-repeat: no-repeat;
-		padding: 40px 0px 0px 80px;
-		.margarita-text {
-			float: left;
-			margin: auto;
-			width: 400px;
-			h1 {
-				color: #FFF;
-				text-transform: uppercase;
-				letter-spacing: 12px;
-				font-family: 'Avenir';
-				font-weight: 100;
-				font-size: 26px;
-			}
-			.subtitle {
-				width: 350px;
-				p {
-					font-size: 12px;
-					letter-spacing: 4px;
-					line-height: 32px;
-				}
-			}
-			.attributions {
-				width: 600px;
-				p {
-					font-size: 11px;
-					letter-spacing: 4px;
-					line-height: 32px;
-				}
-			}
-			.info-detail {
-				p {
-					font-weight: 700;
-					font-size: 14px;
-				}
-			}
-			.buttons {
-				a {
-					text-decoration: none;
-				}
-				.button-white {
-					background-color: rgba(255,255,255,.2);
-					border-radius: 4px;
-					height: 40px;
-					margin: 0 auto;
-					border: 1px solid white;
-					p {
-						/* Font Styling */
-						letter-spacing: 3px;
-						font-size: 12px;
-						line-height: 40px;
-						text-align: center;
-						color: white;
-						font-family: 'Avenir';
-						text-transform: uppercase;
-					}
-					&:hover {
-						cursor: pointer;
-						background-color: #FFF;
-						p {
-							color: $teal-dark;
-							font-weight: 500;
-						}
-					}
-				}
-			}
-			form {
-				p {
-					padding-top: 18px;
-					padding-bottom: 8px;
-				}
-				input[type=text], textarea {
-					border: 1px solid white;
-					background-color: rgba(255,255,255,.1);
-					height: 40px;
-					width: 400px;
-					font-family: 'Avenir';
-					color: white;
-					font-size: 17px;
-					padding: 1px 4px 0px 6px;
-					font-weight: 200;
-					&:focus {
-						border: 2px solid #f8db75;
-						outline: none;
-					}
-				}
-				textarea {
-					height: 60px;
-					padding: 6px;
-				}
-				input[type=submit] {
-					margin-left: 200px;
-					width: 200px;
-					background-color: rgba(255,255,255,.2);
-					border-radius: 4px;
-					height: 40px;
-					margin-top: 10px;
-					border: 1px solid white;
-					/* Font Styling */
-					letter-spacing: 3px;
-					font-size: 12px;
-					line-height: 35px;
-					text-align: center;
-					color: white;
-					font-family: 'Avenir';
-					text-transform: uppercase;
-					&:hover {
-						cursor: pointer;
-						background-color: #FFF;
-						color: $teal-dark;
-						font-weight: 500;
-					}
-				}
-			}
-		}
-		.margarita-image-index {
-			img {
-				width: 520px;
-			}
-		}
-		.margarita-image {
-			img {
-				float: right;
-				width: 400px;
-			}
-		}
-	}
-	.services-title {
-		height: 80px;
-		background-color: #4A2F38;
-		border: 12px solid;
-		-webkit-border-image: url(../images/gold-texture-lighters.png) 4% repeat; /* Safari 3.1-5 */
-	    -o-border-image: url(../images/gold-texture-lighters.png) 4% repeat; /* Opera 11-12.1 */
-		border-image: url(../images/gold-texture-lighters.png) 4% repeat;
-		border-left: 0;
-		border-right: 0;
-		border-top: 0;
-		p {
-			line-height: 80px;
-			text-align: center;
-			color: #CCC;
-			font-weight: 500;
-			font-size: 26px;
-		}
-	}
-	.events-title {
-		height: 80px;
-		background-color: #9D5758;
-		border: 12px solid;
-		-webkit-border-image: url(../images/gold-texture-lighters.png) 4% repeat; /* Safari 3.1-5 */
-	    -o-border-image: url(../images/gold-texture-lighters.png) 4% repeat; /* Opera 11-12.1 */
-		border-image: url(../images/gold-texture-lighters.png) 4% repeat;
-		border-left: 0;
-		border-right: 0;
-		border-top: 0;
-		p {
-			line-height: 80px;
-			text-align: center;
-			color: #CCC;
-			font-weight: 500;
-			font-size: 26px;
-		}
-	}
-	.press-title {
-		height: 80px;
-		background-color: #333;
-		border: 8px solid;
-		-webkit-border-image: url(../images/gold-texture-lighters.png) 4% repeat; /* Safari 3.1-5 */
-	    -o-border-image: url(../images/gold-texture-lighters.png) 4% repeat; /* Opera 11-12.1 */
-		border-image: url(../images/gold-texture-lighters.png) 4% repeat;
-		border-left: 0;
-		border-right: 0;
-		border-top: 0;
-		p {
-			line-height: 80px;
-			text-align: center;
-			color: #CCC;
-			font-weight: 500;
-			font-size: 26px;
-		}
-	}
-	.services-listing {
-		width: 734px;
-		height: 300px;
-		background-color: #4C3942;
-		padding: 60px 60px 60px 230px;
-		.services-container {
-			width: 100%;
-			height: 400px;
-			.services-list-1 {
-				float: left;
-				width: 300px;
-				p {
-					font-size: 14px;
-					line-height: 24px;
-					color: #CCC;
-					text-transform: none;
-					letter-spacing: 1;
-				}
-			}
-			.services-list-2 {
-				float: left;
-				width: 300px;
-				p {
-					font-size: 14px;
-					line-height: 24px;
-					color: #CCC;
-					text-transform: none;
-					letter-spacing: 1;
-				}
-			}
-		}
-		.buttons {
-			height: 40px;
-			width: 300px;
-			a {
-				text-decoration: none;
-				height: 40px;
-				width: 300px;
-				.button-white {
-					width: 300px;
-					background-color: rgba(255,255,255,.2);
-					border-radius: 4px;
-					height: 40px;
-					margin-top: 218px;
-					margin-left: 130px;
-					border: 1px solid white;
-					p {
-						/* Font Styling */
-						letter-spacing: 3px;
-						font-size: 12px;
-						line-height: 40px;
-						text-align: center;
-						color: white;
-						font-family: 'Avenir';
-						text-transform: uppercase;
-						height: 40px;
-					}
-					&:hover {
-						cursor: pointer;
-						background-color: #FFF;
-						p {
-							color: $teal-dark;
-							font-weight: 500;
-						}
-					}
-				}
-			}
-		}
-	}
-	.events-listing {
-		width: 784px;
-		height: 470px;
-		background-color: #894141;
-		padding: 60px 60px 0px 180px;
-		.events-container {
-			width: 100%;
-			height: 500px;
-			.events-list-1 {
-				float: left;
-				width: 220px;
-				margin-right: 30px;
-				h1 {
-					font-size: 17px;
-					line-height: 24px;
-					color: #CCC;
-					font-weight: 500;
-					text-transform: none;
-					letter-spacing: 1;
-					font-family: 'Avenir';
-					color: #fff;
-				}
-				p {
-					font-size: 14px;
-					line-height: 24px;
-					color: #CCC;
-					text-transform: none;
-					letter-spacing: 1;
-				}
-			}
-			.events-list-2 {
-				float: left;
-				width: 220px;
-				margin-right: 30px;
-				h1 {
-					font-size: 17px;
-					line-height: 24px;
-					color: #CCC;
-					font-weight: 500;
-					text-transform: none;
-					letter-spacing: 1;
-					font-family: 'Avenir';
-					color: #fff;
-				}
-				p {
-					font-size: 14px;
-					line-height: 24px;
-					color: #CCC;
-					text-transform: none;
-					letter-spacing: 1;
-				}
-			}
-			.events-list-3 {
-				float: left;
-				width: 220px;
-				h1 {
-					font-size: 17px;
-					line-height: 24px;
-					color: #CCC;
-					font-weight: 500;
-					text-transform: none;
-					letter-spacing: 1;
-					font-family: 'Avenir';
-					color: #fff;
-				}
-				p {
-					font-size: 14px;
-					line-height: 24px;
-					color: #CCC;
-					text-transform: none;
-					letter-spacing: 1;
-				}
-			}
-			.events-list-4 {
-				width: 500px;
-				padding-left: 120px;
-				position: relative;
-				top: 50px;
-				h1 {
-					font-size: 17px;
-					line-height: 24px;
-					color: #CCC;
-					font-weight: 500;
-					text-transform: none;
-					letter-spacing: 1;
-					font-family: 'Avenir';
-					color: #fff;
-				}
-				p {
-					font-size: 14px;
-					line-height: 24px;
-					color: #CCC;
-					text-transform: none;
-					letter-spacing: 1;
-				}
-			}
-		}
-		.buttons {
-			height: 40px;
-			width: 300px;
-			a {
-				text-decoration: none;
-				height: 40px;
-				width: 300px;
-				.button-white {
-					width: 300px;
-					background-color: rgba(255,255,255,.2);
-					border-radius: 4px;
-					height: 40px;
-					margin-top: 100px;
-					margin-left: 180px;
-					border: 1px solid white;
-					p {
-						/* Font Styling */
-						letter-spacing: 3px;
-						font-size: 12px;
-						line-height: 40px;
-						text-align: center;
-						color: white;
-						font-family: 'Avenir';
-						text-transform: uppercase;
-						height: 40px;
-					}
-					&:hover {
-						cursor: pointer;
-						background-color: #FFF;
-						p {
-							color: $teal-dark;
-							font-weight: 500;
-						}
-					}
-				}
-			}
-		}
 	}
 	.packages {
 		height: 100px;
@@ -928,7 +128,7 @@ p {
 	.about {
 		width: 824px;
 		height: 320px;
-		background-image: url(../images/zazstudio-5963.png);
+		background-image: url(../images/zazstudio-5963.jpg);
 		background-position-y: -140px;
 		background-size: 100%;
 		padding: 40px 100px;
@@ -974,20 +174,19 @@ p {
 	}
 	.instagram-container {
 		width: 100%;
-		background-image: url(../images/instagram-background.png);
+		background-image: url(../images/instagram-background.jpg);
 		background-size: 100%;
 		.instagram-wall {
+			margin-left: 262px;
+			width: 500px;
+			height: 520px;
+			padding: 20px 0px;
 			p {
 				margin-left: 4px;
 				letter-spacing: 1px;
 				color: $teal-dark;
 				font-weight: 500;
 			}
-			margin-left: 262px;
-			width: 500px;
-			height: 520px;
-			padding: 20px 0px;
-
 		}
 	}
 	.favicon-center {
@@ -1024,67 +223,7 @@ p {
 		}
 	}
 }
-.logo-container {
-	width: 135px;
-	height: 63px;
-	overflow: visible;
-	float: left;
-	position: relative;
-}
-.logo-container img {
-	width: 100%;
-	margin-top: 0px;
-	margin-left: 20px;
-}
-header {
-	background-color: white;
-	height: 140px;
-	box-shadow: 0px 5px 0px 0px rgba(0,0,0,.9);
-	background-image: url("../images/logo-Z.png");
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: 50% 50%;
-}
-.main-nav {
-	padding-top: 75px;
-	float: right;
-	padding-right: 45px;
-	padding-bottom: 0;
-	margin: 0;
-}
-.main-nav ul {
-	padding: 0;
-	margin: 0;
-}
-.main-nav li {
-	list-style-type: none;
-	display: inline-block;
-	text-align: center;
-}
-.main-nav a {
-	display: inline-block;
-	/* FONT */
-	text-align: center;
-	font-family: arial;
-	font-size: 12px;
-	text-decoration: none;
-	color: #616161;
-	/* PADDING */
-	margin-left: 3px;
-	padding: 16px 8px 8px;
-}
-.main-nav a:hover {
-	cursor: pointer;
-	color: #e0ab92;
-	background-color: rgba(255,255,255,.9);
-}
-.dropdown {		
-	display: none;
-}
-p {
-	margin: 0;
-	padding: 0;
-}
+
 @media all and (min-width: 0px) and (max-width: 768px) {	
 	header {
 		height: 150px
