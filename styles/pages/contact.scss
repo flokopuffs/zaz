@@ -1,0 +1,85 @@
+.contact-contact {
+	height: 460px;
+	background-image: url('../images/margarita-background.jpg');
+	background-size: 100%;
+	background-repeat: no-repeat;
+	padding: 40px 0px 0px 80px;
+	.contact-text {
+		float: left;
+		margin: auto;
+		width: 400px;
+		.subtitle {
+			width: 350px;
+			p {
+				font-size: 12px;
+				letter-spacing: 4px;
+				line-height: 32px;
+			}
+		}
+		.info-detail {
+			p {
+				font-weight: 700;
+				font-size: 14px;
+			}
+		}
+		form {
+			p {
+				padding-top: 18px;
+				padding-bottom: 8px;
+			}
+			input[type=text], textarea {
+				border: 1px solid white;
+				background-color: rgba(255,255,255,.1);
+				height: 40px;
+				width: 400px;
+				font-family: 'Avenir';
+				color: white;
+				font-size: 17px;
+				padding: 1px 4px 0px 6px;
+				font-weight: 200;
+				&:focus {
+					border: 2px solid #f8db75;
+					outline: none;
+				}
+			}
+			textarea {
+				height: 60px;
+				padding: 6px;
+			}
+			input[type=submit] {
+				margin-left: 200px;
+				width: 200px;
+				background-color: rgba(255,255,255,.2);
+				border-radius: 4px;
+				height: 40px;
+				margin-top: 10px;
+				border: 1px solid white;
+				/* Font Styling */
+				letter-spacing: 3px;
+				font-size: 12px;
+				line-height: 35px;
+				text-align: center;
+				color: white;
+				font-family: 'Avenir';
+				 text-transform: uppercase;
+				&:hover {
+					cursor: pointer;
+					background-color: #FFF;
+					color: $teal-dark;
+					font-weight: 500;
+				}
+			}
+		}
+	}
+	.contact-image-index {
+		img {
+			width: 520px;
+		}
+	}
+	.contact-image {
+		img {
+			float: right;
+			width: 400px;
+		}
+	}
+}
