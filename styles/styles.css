@@ -8,6 +8,11 @@
   src: url("../../fonts/Avenir.ttc");
 }
 
+@font-face {
+  font-family: 'Vultures';
+  src: url("../../fonts/taken_by_vultures_alternate.otf");
+}
+
 h1 {
   font-size: 20px;
 }
@@ -51,6 +56,29 @@ p {
   box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.9);
   background-repeat: no-repeat;
   background-position: 50% 50%;
+}
+
+.content-wrap header .share-bar {
+  width: 200px;
+  position: relative;
+  top: 75px;
+  left: 20px;
+  margin: 0;
+  float: left;
+  padding: 30px 15px 0px 0px;
+}
+
+.content-wrap header .share-bar a {
+  text-decoration: none;
+  padding-right: 14px;
+}
+
+.content-wrap header .share-bar a img {
+  opacity: .7;
+}
+
+.content-wrap header .share-bar a img:hover {
+  opacity: 1;
 }
 
 .content-wrap header .logo-container {
@@ -146,19 +174,30 @@ p {
   margin-right: 10px;
 }
 
+.content-wrap .packages .package-icons {
+  margin: 0 auto;
+  width: 330px;
+}
+
 .content-wrap .packages .package-icons a {
   text-decoration: none;
 }
 
 .content-wrap .packages .package-icons a img {
-  margin-left: 45px;
-  height: 64px;
-  margin-top: 15px;
+  margin-right: 85px;
+  height: 50px;
+  margin-top: 22px;
+  opacity: .7;
 }
 
 .content-wrap .packages .package-icons a img:hover {
+  opacity: .9;
   cursor: pointer;
   -webkit-transform: rotate(10deg);
+}
+
+.content-wrap .packages .package-icons a .special {
+  margin-right: 0px;
 }
 
 .content-wrap .about {
@@ -211,45 +250,44 @@ p {
 
 .content-wrap .instagram-container {
   width: 100%;
-  background-image: url(../images/instagram-background.jpg);
-  background-size: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .content-wrap .instagram-container .instagram-wall {
-  margin-left: 262px;
+  margin-left: 222px;
   width: 500px;
-  height: 520px;
+  height: 700px;
   padding: 20px 0px;
 }
 
 .content-wrap .instagram-container .instagram-wall p {
-  margin-left: 4px;
-  letter-spacing: 1px;
-  color: #3b6468;
-  font-weight: 500;
+  letter-spacing: 3px;
+  color: #1c070b;
+  text-align: center;
+  font-weight: 300;
+  font-size: 20px;
+  margin: 22px 0px 32px;
+  padding-left: 88px;
 }
 
-.content-wrap .favicon-center {
-  background-color: #eff5f5;
+.content-wrap .share-hero {
+  background-color: white;
 }
 
-.content-wrap .favicon-center .favicon-container {
-  height: 40px;
+.content-wrap .share-hero .share-container {
   margin: 0 auto;
-  width: 515px;
   display: block;
-  padding: 10px 2px;
+  padding: 50px 0px;
 }
 
-.content-wrap .favicon-center .favicon-container a {
-  text-decoration: none;
-}
-
-.content-wrap .favicon-center .favicon-container a .icon {
-  border-radius: 4px;
-  cursor: hand;
-  cursor: pointer;
-  margin: 0px;
+.content-wrap .share-hero .share-container p {
+  font-family: 'Vultures';
+  letter-spacing: 3px;
+  color: #1c070b;
+  text-align: center;
+  text-transform: none;
+  font-weight: 300;
+  font-size: 56px;
 }
 
 .content-wrap h5 {
@@ -257,15 +295,15 @@ p {
   font-weight: 200;
   font-size: 12px;
   text-align: center;
-  border-top: 2px solid #b3cbcf;
   padding: 20px;
   margin: auto;
-  color: #3b6468;
+  background-color: #313131;
+  color: white;
 }
 
 .content-wrap h5 a {
   text-decoration: none;
-  color: #3b6468;
+  color: white;
 }
 
 @media all and (min-width: 0px) and (max-width: 768px) {

@@ -31,6 +31,25 @@ p {
 		box-shadow: 0px 5px 0px 0px rgba(0,0,0,.9);
 		background-repeat: no-repeat;
 		background-position: 50% 50%;
+		.share-bar {
+			width: 200px;
+			position: relative;
+			top: 75px;
+			left: 20px;
+			margin: 0;
+			float: left;
+			padding: 30px 15px 0px 0px;
+			a {
+				text-decoration: none;
+				padding-right: 14px;
+				img {
+					opacity: .7;
+					&:hover {
+						opacity: 1;	
+					}
+				}
+			}
+		}
 		.logo-container {
 			width: 135px;
 			height: 63px;
@@ -111,16 +130,23 @@ p {
 			margin-right: 10px;
 		}
 		.package-icons {
+			margin: 0 auto;
+			width: 330px;
 			a {
 				text-decoration: none;
 				img {
-					margin-left: 45px;
-					height: 64px;
-					margin-top: 15px;
+					margin-right: 85px;
+					height: 50px;
+					margin-top: 22px;
+					opacity: .7;
 					&:hover {
+						opacity: .9;
 						cursor: pointer;
 						-webkit-transform: rotate(10deg);
 					}
+				}
+				.special {
+					margin-right: 0px;
 				}
 			}
 		}
@@ -174,37 +200,37 @@ p {
 	}
 	.instagram-container {
 		width: 100%;
-		background-image: url(../images/instagram-background.jpg);
-		background-size: 100%;
+		background-color: rgba(255, 255, 255, .9);
 		.instagram-wall {
-			margin-left: 262px;
+			margin-left: 222px;
 			width: 500px;
-			height: 520px;
+			height: 700px;
 			padding: 20px 0px;
 			p {
-				margin-left: 4px;
-				letter-spacing: 1px;
-				color: $teal-dark;
-				font-weight: 500;
+				letter-spacing: 3px;
+				color: rgb(28, 7, 11);
+				text-align: center;
+				font-weight: 300;
+				font-size: 20px;
+				margin: 22px 0px 32px;
+				padding-left: 88px;
 			}
 		}
 	}
-	.favicon-center {
-		background-color: $teal-light;
-		.favicon-container {
-			height: 40px;
+	.share-hero {
+		background-color: white;
+		.share-container {
 			margin: 0 auto;
-			width: 515px;
 			display: block;
-			padding: 10px 2px;
-			a {
-				text-decoration: none;
-				.icon {
-					border-radius: 4px;
-					cursor: hand;
-					cursor: pointer;
-					margin: 0px;
-				}
+			padding: 50px 0px;
+			p {
+				font-family: 'Vultures';
+				letter-spacing: 3px;
+				color: rgb(28, 7, 11);
+				text-align: center;
+				text-transform: none;
+				font-weight: 300;
+				font-size: 56px;
 			}
 		}
 	}
@@ -213,13 +239,13 @@ p {
 		font-weight: 200;
 		font-size: 12px;
 		text-align: center;
-		border-top: 2px solid #b3cbcf;
 		padding: 20px;
 		margin: auto;
-		color: $teal-dark;
+		background-color: #313131;
+		color: white;
 		a {
 			text-decoration: none;
-			color: $teal-dark;
+			color: white;
 		}
 	}
 }
