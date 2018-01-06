@@ -270,6 +270,11 @@ p {
   padding-left: 88px;
 }
 
+.content-wrap .instagram-container .instagram-wall iframe {
+  border: 2px solid #464646;
+  border-style: none;
+}
+
 .content-wrap .share-hero {
   background-color: white;
 }
