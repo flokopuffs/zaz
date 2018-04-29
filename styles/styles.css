@@ -635,12 +635,12 @@ p {
 
 .double-col-edecor {
   width: 100%;
-  height: 1220px;
+  height: 950px;
 }
 
 .double-col-edecor .edecor-about {
   float: left;
-  height: 1220px;
+  height: 950px;
   width: 836px;
   padding: 0px 50px;
   padding-left: 138px;
@@ -648,52 +648,9 @@ p {
   background-size: 100%;
 }
 
-.double-col-edecor .edecor-about .havenly-overlay {
-  position: relative;
-  top: 50px;
-  background-color: rgba(255, 255, 255, 0.8);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  height: 250px;
-  width: 750px;
-}
-
-.double-col-edecor .edecor-about .havenly-overlay .havenly-text {
-  padding: 40px 0px 0px 0px;
-}
-
-.double-col-edecor .edecor-about .havenly-overlay .havenly-text .havenly-detail {
-  width: 610px;
-  text-align: center;
-}
-
-.double-col-edecor .edecor-about .havenly-overlay .havenly-text .havenly-detail h1 {
-  font-family: "Avenir";
-  text-align: center;
-  padding-left: 140px;
-}
-
-.double-col-edecor .edecor-about .havenly-overlay .havenly-text .havenly-detail p {
-  font-size: 10px;
-  letter-spacing: 1px;
-  line-height: 12px;
-  color: #444;
-  font-family: "Avenir";
-  padding-left: 140px;
-}
-
-.double-col-edecor .edecor-about .havenly-overlay .havenly-text .havenly-detail .havenly-promo {
-  background-image: url("../images/favicons/havenly-long.jpg");
-  background-size: contain;
-  height: 50px;
-  width: 136px;
-  margin-left: 305px;
-  border: 1px solid rgba(0, 0, 0, 0.4);
-}
-
 .double-col-edecor .edecor-about .edecor-overlay {
   position: relative;
-  top: 50px;
+  top: 40px;
   background-color: rgba(255, 255, 255, 0.8);
   background-size: 100%;
   background-repeat: no-repeat;
