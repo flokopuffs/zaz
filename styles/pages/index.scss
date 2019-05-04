@@ -45,7 +45,7 @@ p {
 				img {
 					opacity: .7;
 					&:hover {
-						opacity: 1;	
+						opacity: 1;
 					}
 				}
 			}
@@ -66,7 +66,7 @@ p {
 			margin: 0;
 			float: right;
 			padding: 30px 15px 0px 0px;
-			.dropdown {		
+			.dropdown {
 				display: none;
 			}
 			ul {
@@ -202,7 +202,7 @@ p {
 		width: 100%;
 		background-color: rgba(255, 255, 255, .9);
 		.instagram-wall {
-			margin-left: 222px;
+			margin-left: 252px;
 			width: 500px;
 			height: 700px;
 			padding: 20px 0px;
@@ -213,7 +213,6 @@ p {
 				font-weight: 300;
 				font-size: 20px;
 				margin: 22px 0px 32px;
-				padding-left: 88px;
 			}
 			iframe {
 				border: 2px solid rgb(70,70,70);
@@ -254,7 +253,7 @@ p {
 	}
 }
 
-@media all and (min-width: 0px) and (max-width: 768px) {	
+@media all and (min-width: 0px) and (max-width: 768px) {
 	header {
 		height: 150px
 	}
@@ -347,7 +346,7 @@ p {
 
 /************ MOBILE *************/
 
-@media all and (min-device-width: 0px) and (max-device-width: 1242px) {	
+@media all and (min-device-width: 0px) and (max-device-width: 1242px) {
 	header {
 		height: 250px
 	}
