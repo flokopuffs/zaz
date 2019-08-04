@@ -1,17 +1,13 @@
-@font-face {
-  font-family: 'Mathilde';
-  src: url("../../fonts/mathilde.otf"); }
+h1 {
+  font-size: 20px; }
 
 @font-face {
-  font-family: 'Avenir';
-  src: url("../../fonts/Avenir.ttc"); }
+  font-family: 'Regular';
+  src: url("variables/Montserrat-Light.ttf"); }
 
 @font-face {
   font-family: 'Vultures';
-  src: url("../../fonts/taken_by_vultures_alternate.otf"); }
-
-h1 {
-  font-size: 20px; }
+  src: url("variables/taken_by_vultures_alternate.otf"); }
 
 html, body {
   margin: 0;
@@ -30,55 +26,32 @@ p {
   color: #FFF;
   text-transform: uppercase;
   letter-spacing: 12px;
-  font-family: "Avenir", helvetica, arial, sans-serif; }
+  font-family: "Regular", helvetica, arial, sans-serif; }
 
 .content-wrap {
   width: 1024px;
-  margin: auto;
-  background-color: #d9e7e5;
-  border: 1px solid #adc3c5;
-  border-top: none;
-  border-bottom: none;
-  -webkit-box-shadow: 0px 10px 5px 5px rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 10px 5px 5px rgba(0, 0, 0, 0.1); }
+  margin: auto; }
   .content-wrap header {
     background-color: white;
     height: 140px;
-    -webkit-box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.9);
-    box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.9);
-    background-repeat: no-repeat;
-    background-position: 50% 50%; }
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
     .content-wrap header .logo-container {
-      width: 135px;
-      height: 63px;
-      overflow: visible;
-      position: relative;
-      margin: 0 auto; }
-      .content-wrap header .logo-container img {
-        width: 100%;
-        margin: 0 auto; }
+      height: 100%;
+      width: 150px;
+      background-image: url(../images/logo-Z.png);
+      background-size: contain;
+      background-repeat: no-repeat; }
+    .content-wrap header .company-name p {
+      width: 500px;
+      height: 140px;
+      line-height: 140px;
+      color: black;
+      font-size: 35px; }
   .content-wrap p {
     margin: 0;
     padding: 0; }
-  .content-wrap .instagram-container {
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0.9); }
-    .content-wrap .instagram-container .instagram-wall {
-      margin-left: 222px;
-      width: 500px;
-      height: 700px;
-      padding: 20px 0px; }
-      .content-wrap .instagram-container .instagram-wall p {
-        letter-spacing: 3px;
-        color: #1c070b;
-        text-align: center;
-        font-weight: 300;
-        font-size: 20px;
-        margin: 22px 0px 32px;
-        padding-left: 88px; }
-      .content-wrap .instagram-container .instagram-wall iframe {
-        border: 2px solid #464646;
-        border-style: none; }
   .content-wrap .share-hero {
     background-color: white; }
     .content-wrap .share-hero .share-container {
@@ -86,7 +59,7 @@ p {
       display: block;
       padding: 50px 0px; }
       .content-wrap .share-hero .share-container p {
-        font-family: 'Vultures';
+        font-family: "Vultures";
         letter-spacing: 3px;
         color: #1c070b;
         text-align: center;
