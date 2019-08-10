@@ -1,6 +1,10 @@
 @font-face {
-	font-family: 'Regular';
+	font-family: 'mLight';
 	src: url('variables/Montserrat-Light.ttf');
+}
+@font-face {
+	font-family: 'mRegular';
+	src: url('variables/Montserrat-Regular.ttf');
 }
 @font-face {
 	font-family: 'Vultures';
@@ -8,7 +12,8 @@
 }
 
 $helvetica: helvetica, arial, sans-serif;
-$regular: 'Regular';
+$mLight: 'mLight';
+$mRegular: 'mRegular';
 $Vultures: 'Vultures';
 
 html, body {
@@ -25,10 +30,10 @@ html, body {
 	clear: both;
 }
 p {
-	color: #FFF;
+	color: #000;
 	text-transform: uppercase;
 	letter-spacing: 12px;
-	font-family: 'Regular', $helvetica;
+	font-family: $mLight, $helvetica;
 }
 .content-wrap {
 	width: 1024px;
@@ -44,36 +49,115 @@ p {
 			background-size: contain;
 			background-repeat: no-repeat;
 		}
-		.company-name {
+		.name-full {
+			height: 100%;
+			.company-name {
+				p {
+					width: 295px;
+					position: relative;
+					top: 45px;
+					color: black;
+					font-size: 28px;
+					text-align: center;
+				}
+				.boutique-text {
+					font-family: $Vultures;
+					letter-spacing: 3px;
+					color: rgb(28, 7, 11);
+					text-transform: none;
+					font-weight: 300;
+					font-size: 26px;
+					text-align: center;
+					position: relative;
+					left: -10px;
+				}
+			}
+		}
+		.inquiries {
+			height: 100%;
+			width: 100%;
 			p {
-				width: 500px;
-				height: 140px;
+				text-align: right;
+				letter-spacing: 1px;
 				line-height: 140px;
-				color: black;
-				font-size: 35px;
+				font-size: 14px;
+			}
+		}
+		.houzz-logo {
+			height: 100%;
+			width: 50px;
+		}
+	}
+	.main-content {
+		display: flex;
+		.sidebar-nav {
+			width: 180px;
+			height: 100%;
+			ul {
+				padding-left: 4px;
+				a {
+					text-decoration: none;
+					li {
+						font-family: $mRegular;
+						text-transform: uppercase;
+						color: black;
+						list-style: none;
+						padding-bottom: 20px;
+						font-size: 20px;
+					}
+				}
+			}
+		}
+		.grid-area {
+			width: 100%;
+			height: auto;
+			background-color: red;
+			padding: 20px;
+			.grid-photos {
+				width: 600px;
+				height: 100%;
+				background-color: yellow;
+				margin: 0px auto;
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-around;
+				.grid-cell {
+					flex: 0 0 33%;
+					height: 110px;
+				}
+				.row1-col1{
+					background-color: blue;
+				}
+				.row1-col2{
+					background-color: green;
+				}
+				.row1-col3{
+					background-color: pink;
+				}
+				.row2-col1{
+					background-color: orange;
+				}
+				.row2-col2{
+					background-color: fuchsia;
+				}
+				.row2-col3{
+					background-color: purple;
+				}
+				.row3-col1{
+					background-color: teal;
+				}
+				.row3-col2{
+					background-color: lime;
+				}
+				.row3-col3{
+					background-color: tan;
+				}
 			}
 		}
 	}
 	p {
 		margin: 0;
 		padding: 0;
-	}
-	.share-hero {
-		background-color: white;
-		.share-container {
-			margin: 0 auto;
-			display: block;
-			padding: 50px 0px;
-			p {
-				font-family: $Vultures;
-				letter-spacing: 3px;
-				color: rgb(28, 7, 11);
-				text-align: center;
-				text-transform: none;
-				font-weight: 300;
-				font-size: 56px;
-			}
-		}
 	}
 	h5 {
 		font-family: 'Avenir';
