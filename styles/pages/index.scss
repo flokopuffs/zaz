@@ -1,28 +1,13 @@
-@font-face {
-	font-family: 'mLight';
-	src: url('variables/Montserrat-Light.ttf');
-}
-@font-face {
-	font-family: 'mRegular';
-	src: url('variables/Montserrat-Regular.ttf');
-}
-@font-face {
-	font-family: 'Vultures';
-	src: url('variables/taken_by_vultures_alternate.otf');
-}
-
-$helvetica: helvetica, arial, sans-serif;
-$mLight: 'mLight';
-$mRegular: 'mRegular';
-$Vultures: 'Vultures';
-
 html, body {
 	margin: 0;
 	padding: 0;
-	background-color: $teal-light;
+	background-color: #FFF;
 }
 .clearfix {
 	overflow: auto;
+}
+a {
+	text-decoration: none;
 }
 .clearfix:after {
 	content: "";
@@ -30,10 +15,10 @@ html, body {
 	clear: both;
 }
 p {
-	color: #000;
+	color: #666;
 	text-transform: uppercase;
 	letter-spacing: 12px;
-	font-family: $mLight, $helvetica;
+	font-family: $regular, $helvetica;
 }
 .content-wrap {
 	width: 1024px;
@@ -44,7 +29,7 @@ p {
 		display: flex;
 		.logo-container {
 			height: 100%;
-			width: 150px;
+			width: 140px;
 			background-image: url(../images/logo-Z.png);
 			background-size: contain;
 			background-repeat: no-repeat;
@@ -73,14 +58,30 @@ p {
 				}
 			}
 		}
+
 		.inquiries {
 			height: 100%;
-			width: 100%;
-			p {
-				text-align: right;
-				letter-spacing: 1px;
-				line-height: 140px;
-				font-size: 14px;
+			width: 989px;
+			.inquiry-box {
+				float: right;
+				width: 150px;
+				display: flex;
+				.houzz-logo {
+					position: relative;
+					top: 50px;
+					right: 7px;
+					height: 40px;
+					width: 40px;
+					vertical-align: middle;
+					background-image: url("../images/houzz-inquiries.png");
+					background-size: contain;
+				}
+				p {
+					text-align: right;
+					letter-spacing: 1px;
+					line-height: 140px;
+					font-size: 14px;
+				}
 			}
 		}
 		.houzz-logo {
@@ -91,66 +92,212 @@ p {
 	.main-content {
 		display: flex;
 		.sidebar-nav {
-			width: 180px;
+			padding-top: 20px;
+			width: 240px;
 			height: 100%;
 			ul {
-				padding-left: 4px;
+				padding-left: 20px;
 				a {
 					text-decoration: none;
 					li {
-						font-family: $mRegular;
+						font-family: $regular;
 						text-transform: uppercase;
-						color: black;
+						color: #666;
 						list-style: none;
 						padding-bottom: 20px;
-						font-size: 20px;
+						font-size: 17px;
+						&:hover {
+							color: #111;
+						}
 					}
+				}
+				button {
+					border: none;
+					font-family: $regular;
+					text-transform: uppercase;
+					color: #666;
+					list-style: none;
+					margin-bottom: 20px;
+					font-size: 17px;
+					padding: 0px;
+					background-color: transparent;
+					cursor: pointer;
+				}
+			}
+			.share-icons{
+				margin-left: 20px;
+				opacity: .5;
+				img {
+					padding-left: 5px;
 				}
 			}
 		}
 		.grid-area {
 			width: 100%;
+			max-width: 900px;
 			height: auto;
-			background-color: red;
 			padding: 20px;
-			.grid-photos {
+			h2 {
+				font-family: $regular;
+			}
+			.about-right {
+				display: flex;
 				width: 600px;
-				height: 100%;
-				background-color: yellow;
-				margin: 0px auto;
+				margin: 0 auto;
+				.about-text {
+					margin-top: 30px;
+					width: 350px;
+					h2 {
+						text-transform: uppercase;
+						font-size: 14px;
+					}
+					.about-paragraph {
+						font-size: 9px;
+						text-transform: none;
+						letter-spacing: .1px;
+					}
+				}
+				.about-image {
+					float: left;
+					width: 200px;
+					height: 200px;
+					margin-top: 20px;
+					margin-left: 40px;
+					border-radius: 400px;
+					background-image: url(../images/zazstudio-6275.jpg);
+					background-size: 210%;
+					background-position: 13% 30%;
+					border: 6px solid #FFF;
+				}
+			}
+			.contact-right {
+				display: flex;
+				width: 600px;
+				height: 300px;
+				margin: 0 auto;
+				.contact-info {
+					position: relative;
+					top: 50px;
+					h1 {
+						font-size: 10px;
+						font-family: $medium;
+						text-transform: uppercase;
+					}
+					p {
+						font-size: 10px;
+						text-transform: none;
+						letter-spacing: .1px;
+					}
+				}
+				.contact-map {
+					margin-left: 40px;
+				}
+			}
+			.grid-press {
 				display: flex;
 				flex-wrap: wrap;
 				justify-content: space-around;
+				.press-cell {
+					background-color: black;
+					margin: 10px;
+					width: 150px;
+					height: 200px;
+					background-position: center;
+				}
+				.mag1 {
+					background-image: url('../images/press/hospitality_design.jpg');
+					background-size: cover;
+				}
+				.mag2 {
+					background-image: url('../images/press/boston_voyager.jpg');
+					background-size: cover;
+				}
+				.mag3 {
+					background-image: url('../images/press/chairish.jpg');
+					background-size: cover;
+				}
+				.mag4 {
+					background-image: url('../images/press/dream_world_decor.jpg');
+					background-size: cover;
+				}
+				.mag5 {
+					background-image: url('../images/press/virserius_studio.jpg');
+					background-size: cover;
+				}
+				.mag6 {
+					background-image: url('../images/press/houzz_week_22.jpg');
+					background-size: cover;
+				}
+				.mag7 {
+					background-image: url('../images/press/imaggo.jpg');
+					background-size: cover;
+				}
+				.mag8 {
+					background-image: url('../images/press/inviting_interiors.jpg');
+					background-size: cover;
+				}
+			}
+			.grid-photos {
+				width: 800px;
+				height: 100%;
+				margin: 0px auto;
+				display: flex;
+				flex-wrap: wrap;
+				align-items: center;
+  			justify-content: center;
 				.grid-cell {
 					flex: 0 0 33%;
-					height: 110px;
+					height: 140px;
+					margin-bottom: 2px;
+					display:flex;
+					align-items: center;
+					justify-content: center;
+					p {
+						letter-spacing: .1px;
+						text-transform: none;
+						font-size: 11px;
+						padding: 15px;
+						color: #333;
+					}
 				}
 				.row1-col1{
-					background-color: blue;
+					background-image: url("../images/gallery/nicole.jpg");
+					background-size: cover;
 				}
 				.row1-col2{
-					background-color: green;
+					background-image: url("../images/gallery/beach.jpg");
+					background-size: cover;
 				}
 				.row1-col3{
-					background-color: pink;
+					background-color: #EEE;
+					p {
+						font-size: 10px;
+					}
 				}
 				.row2-col1{
-					background-color: orange;
+					background-color: #EEE;
 				}
 				.row2-col2{
-					background-color: fuchsia;
+					background-image: url("../images/gallery/adi.jpg");
+					background-size: cover;
 				}
 				.row2-col3{
-					background-color: purple;
+					background-image: url("../images/gallery/nicole2.jpg");
+					background-size: cover;
 				}
 				.row3-col1{
-					background-color: teal;
+					background-image: url("../images/gallery/blush.jpg");
+					background-size: cover;
 				}
 				.row3-col2{
-					background-color: lime;
+					background-color: #EEE;
+					p {
+						font-size: 9px;
+					}
 				}
 				.row3-col3{
-					background-color: tan;
+					background-image: url("../images/gallery/adi2.jpg");
+					background-size: cover;
 				}
 			}
 		}
@@ -166,11 +313,11 @@ p {
 		text-align: center;
 		padding: 20px;
 		margin: auto;
-		background-color: #313131;
-		color: white;
+		background-color: #FFF;
+		color: #999;
 		a {
 			text-decoration: none;
-			color: white;
+			color: #999;
 		}
 	}
 }

@@ -1,25 +1,56 @@
-h1 {
-  font-size: 20px; }
+@font-face {
+  font-family: 'Montserrat-Thin';
+  src: url("../fonts/Montserrat-Thin.ttf"); }
 
 @font-face {
-  font-family: 'mLight';
-  src: url("variables/Montserrat-Light.ttf"); }
+  font-family: 'Montserrat-ExtraLight';
+  src: url("../fonts/Montserrat-ExtraLight.ttf"); }
 
 @font-face {
-  font-family: 'mRegular';
-  src: url("variables/Montserrat-Regular.ttf"); }
+  font-family: 'Montserrat-Light';
+  src: url("../fonts/Montserrat-Light.ttf"); }
+
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src: url("../fonts/Montserrat-Regular.ttf"); }
+
+@font-face {
+  font-family: 'Montserrat-Medium';
+  src: url("../fonts/Montserrat-Medium.ttf"); }
+
+@font-face {
+  font-family: 'Montserrat-SemiBold';
+  src: url("../fonts/Montserrat-SemiBold.ttf"); }
+
+@font-face {
+  font-family: 'Montserrat-Bold';
+  src: url("../fonts/Montserrat-Bold.ttf"); }
+
+@font-face {
+  font-family: 'Montserrat-ExtraBold';
+  src: url("../fonts/Montserrat-ExtraBold.ttf"); }
+
+@font-face {
+  font-family: 'Montserrat-Black';
+  src: url("../fonts/Montserrat-Black.ttf"); }
 
 @font-face {
   font-family: 'Vultures';
-  src: url("variables/taken_by_vultures_alternate.otf"); }
+  src: url("../fonts/taken_by_vultures_alternate.otf"); }
+
+h1 {
+  font-size: 20px; }
 
 html, body {
   margin: 0;
   padding: 0;
-  background-color: #eff5f5; }
+  background-color: #FFF; }
 
 .clearfix {
   overflow: auto; }
+
+a {
+  text-decoration: none; }
 
 .clearfix:after {
   content: "";
@@ -27,10 +58,10 @@ html, body {
   clear: both; }
 
 p {
-  color: #000;
+  color: #666;
   text-transform: uppercase;
   letter-spacing: 12px;
-  font-family: "mLight", helvetica, arial, sans-serif; }
+  font-family: "Montserrat-Regular", helvetica, arial, sans-serif; }
 
 .content-wrap {
   width: 1024px;
@@ -43,7 +74,7 @@ p {
     display: flex; }
     .content-wrap header .logo-container {
       height: 100%;
-      width: 150px;
+      width: 140px;
       background-image: url(../images/logo-Z.png);
       background-size: contain;
       background-repeat: no-repeat; }
@@ -68,12 +99,27 @@ p {
         left: -10px; }
     .content-wrap header .inquiries {
       height: 100%;
-      width: 100%; }
-      .content-wrap header .inquiries p {
-        text-align: right;
-        letter-spacing: 1px;
-        line-height: 140px;
-        font-size: 14px; }
+      width: 989px; }
+      .content-wrap header .inquiries .inquiry-box {
+        float: right;
+        width: 150px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+        .content-wrap header .inquiries .inquiry-box .houzz-logo {
+          position: relative;
+          top: 50px;
+          right: 7px;
+          height: 40px;
+          width: 40px;
+          vertical-align: middle;
+          background-image: url("../images/houzz-inquiries.png");
+          background-size: contain; }
+        .content-wrap header .inquiries .inquiry-box p {
+          text-align: right;
+          letter-spacing: 1px;
+          line-height: 140px;
+          font-size: 14px; }
     .content-wrap header .houzz-logo {
       height: 100%;
       width: 50px; }
@@ -82,29 +128,93 @@ p {
     display: -ms-flexbox;
     display: flex; }
     .content-wrap .main-content .sidebar-nav {
-      width: 180px;
+      padding-top: 20px;
+      width: 240px;
       height: 100%; }
       .content-wrap .main-content .sidebar-nav ul {
-        padding-left: 4px; }
+        padding-left: 20px; }
         .content-wrap .main-content .sidebar-nav ul a {
           text-decoration: none; }
           .content-wrap .main-content .sidebar-nav ul a li {
-            font-family: "mRegular";
+            font-family: "Montserrat-Regular";
             text-transform: uppercase;
-            color: black;
+            color: #666;
             list-style: none;
             padding-bottom: 20px;
-            font-size: 20px; }
+            font-size: 17px; }
+            .content-wrap .main-content .sidebar-nav ul a li:hover {
+              color: #111; }
+        .content-wrap .main-content .sidebar-nav ul button {
+          border: none;
+          font-family: "Montserrat-Regular";
+          text-transform: uppercase;
+          color: #666;
+          list-style: none;
+          margin-bottom: 20px;
+          font-size: 17px;
+          padding: 0px;
+          background-color: transparent;
+          cursor: pointer; }
+      .content-wrap .main-content .sidebar-nav .share-icons {
+        margin-left: 20px;
+        opacity: .5; }
+        .content-wrap .main-content .sidebar-nav .share-icons img {
+          padding-left: 5px; }
     .content-wrap .main-content .grid-area {
       width: 100%;
+      max-width: 900px;
       height: auto;
-      background-color: red;
       padding: 20px; }
-      .content-wrap .main-content .grid-area .grid-photos {
+      .content-wrap .main-content .grid-area h2 {
+        font-family: "Montserrat-Regular"; }
+      .content-wrap .main-content .grid-area .about-right {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
         width: 600px;
-        height: 100%;
-        background-color: yellow;
-        margin: 0px auto;
+        margin: 0 auto; }
+        .content-wrap .main-content .grid-area .about-right .about-text {
+          margin-top: 30px;
+          width: 350px; }
+          .content-wrap .main-content .grid-area .about-right .about-text h2 {
+            text-transform: uppercase;
+            font-size: 14px; }
+          .content-wrap .main-content .grid-area .about-right .about-text .about-paragraph {
+            font-size: 9px;
+            text-transform: none;
+            letter-spacing: .1px; }
+        .content-wrap .main-content .grid-area .about-right .about-image {
+          float: left;
+          width: 200px;
+          height: 200px;
+          margin-top: 20px;
+          margin-left: 40px;
+          border-radius: 400px;
+          background-image: url(../images/zazstudio-6275.jpg);
+          background-size: 210%;
+          background-position: 13% 30%;
+          border: 6px solid #FFF; }
+      .content-wrap .main-content .grid-area .contact-right {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 600px;
+        height: 300px;
+        margin: 0 auto; }
+        .content-wrap .main-content .grid-area .contact-right .contact-info {
+          position: relative;
+          top: 50px; }
+          .content-wrap .main-content .grid-area .contact-right .contact-info h1 {
+            font-size: 10px;
+            font-family: "Montserrat-Medium";
+            text-transform: uppercase; }
+          .content-wrap .main-content .grid-area .contact-right .contact-info p {
+            font-size: 10px;
+            text-transform: none;
+            letter-spacing: .1px; }
+        .content-wrap .main-content .grid-area .contact-right .contact-map {
+          margin-left: 40px; }
+      .content-wrap .main-content .grid-area .grid-press {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -112,29 +222,100 @@ p {
         flex-wrap: wrap;
         -ms-flex-pack: distribute;
         justify-content: space-around; }
+        .content-wrap .main-content .grid-area .grid-press .press-cell {
+          background-color: black;
+          margin: 10px;
+          width: 150px;
+          height: 200px;
+          background-position: center; }
+        .content-wrap .main-content .grid-area .grid-press .mag1 {
+          background-image: url("../images/press/hospitality_design.jpg");
+          background-size: cover; }
+        .content-wrap .main-content .grid-area .grid-press .mag2 {
+          background-image: url("../images/press/boston_voyager.jpg");
+          background-size: cover; }
+        .content-wrap .main-content .grid-area .grid-press .mag3 {
+          background-image: url("../images/press/chairish.jpg");
+          background-size: cover; }
+        .content-wrap .main-content .grid-area .grid-press .mag4 {
+          background-image: url("../images/press/dream_world_decor.jpg");
+          background-size: cover; }
+        .content-wrap .main-content .grid-area .grid-press .mag5 {
+          background-image: url("../images/press/virserius_studio.jpg");
+          background-size: cover; }
+        .content-wrap .main-content .grid-area .grid-press .mag6 {
+          background-image: url("../images/press/houzz_week_22.jpg");
+          background-size: cover; }
+        .content-wrap .main-content .grid-area .grid-press .mag7 {
+          background-image: url("../images/press/imaggo.jpg");
+          background-size: cover; }
+        .content-wrap .main-content .grid-area .grid-press .mag8 {
+          background-image: url("../images/press/inviting_interiors.jpg");
+          background-size: cover; }
+      .content-wrap .main-content .grid-area .grid-photos {
+        width: 800px;
+        height: 100%;
+        margin: 0px auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center; }
         .content-wrap .main-content .grid-area .grid-photos .grid-cell {
           -webkit-box-flex: 0;
           -ms-flex: 0 0 33%;
           flex: 0 0 33%;
-          height: 110px; }
+          height: 140px;
+          margin-bottom: 2px;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center; }
+          .content-wrap .main-content .grid-area .grid-photos .grid-cell p {
+            letter-spacing: .1px;
+            text-transform: none;
+            font-size: 11px;
+            padding: 15px;
+            color: #333; }
         .content-wrap .main-content .grid-area .grid-photos .row1-col1 {
-          background-color: blue; }
+          background-image: url("../images/gallery/nicole.jpg");
+          background-size: cover; }
         .content-wrap .main-content .grid-area .grid-photos .row1-col2 {
-          background-color: green; }
+          background-image: url("../images/gallery/beach.jpg");
+          background-size: cover; }
         .content-wrap .main-content .grid-area .grid-photos .row1-col3 {
-          background-color: pink; }
+          background-color: #EEE; }
+          .content-wrap .main-content .grid-area .grid-photos .row1-col3 p {
+            font-size: 10px; }
         .content-wrap .main-content .grid-area .grid-photos .row2-col1 {
-          background-color: orange; }
+          background-color: #EEE; }
         .content-wrap .main-content .grid-area .grid-photos .row2-col2 {
-          background-color: fuchsia; }
+          background-image: url("../images/gallery/adi.jpg");
+          background-size: cover; }
         .content-wrap .main-content .grid-area .grid-photos .row2-col3 {
-          background-color: purple; }
+          background-image: url("../images/gallery/nicole2.jpg");
+          background-size: cover; }
         .content-wrap .main-content .grid-area .grid-photos .row3-col1 {
-          background-color: teal; }
+          background-image: url("../images/gallery/blush.jpg");
+          background-size: cover; }
         .content-wrap .main-content .grid-area .grid-photos .row3-col2 {
-          background-color: lime; }
+          background-color: #EEE; }
+          .content-wrap .main-content .grid-area .grid-photos .row3-col2 p {
+            font-size: 9px; }
         .content-wrap .main-content .grid-area .grid-photos .row3-col3 {
-          background-color: tan; }
+          background-image: url("../images/gallery/adi2.jpg");
+          background-size: cover; }
   .content-wrap p {
     margin: 0;
     padding: 0; }
@@ -145,11 +326,11 @@ p {
     text-align: center;
     padding: 20px;
     margin: auto;
-    background-color: #313131;
-    color: white; }
+    background-color: #FFF;
+    color: #999; }
     .content-wrap h5 a {
       text-decoration: none;
-      color: white; }
+      color: #999; }
 
 @media all and (min-width: 0px) and (max-width: 768px) {
   header {
