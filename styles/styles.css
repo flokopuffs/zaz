@@ -343,7 +343,8 @@ p {
           margin: 10px;
           width: 150px;
           height: 200px;
-          background-position: center; }
+          background-position: center;
+          border: 1px solid #999; }
         .content-wrap .main-content .grid-area .grid-press .mag1 {
           background-image: url("../images/press/hospitality_design.jpg");
           background-size: cover; }
@@ -370,7 +371,6 @@ p {
           background-size: cover; }
       .content-wrap .main-content .grid-area .grid-photos {
         width: 800px;
-        height: 100%;
         margin: 0px auto;
         display: -webkit-box;
         display: -ms-flexbox;

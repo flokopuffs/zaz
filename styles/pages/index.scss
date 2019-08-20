@@ -335,6 +335,7 @@ p {
 					width: 150px;
 					height: 200px;
 					background-position: center;
+					border: 1px solid #999;
 				}
 				.mag1 {
 					background-image: url('../images/press/hospitality_design.jpg');
@@ -371,7 +372,6 @@ p {
 			}
 			.grid-photos {
 				width: 800px;
-				height: 100%;
 				margin: 0px auto;
 				display: flex;
 				flex-wrap: wrap;
