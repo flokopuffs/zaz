@@ -167,6 +167,122 @@ p {
       padding: 20px; }
       .content-wrap .main-content .grid-area h2 {
         font-family: "Montserrat-Regular"; }
+      .content-wrap .main-content .grid-area .service-right {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 750px;
+        margin: 0 auto; }
+        .content-wrap .main-content .grid-area .service-right .service-res {
+          width: 100%;
+          -webkit-box-flex: 1;
+          -ms-flex: 1 0 48%;
+          flex: 1 0 48%;
+          margin-right: 10px; }
+          .content-wrap .main-content .grid-area .service-right .service-res h2 {
+            margin: 5px 0px;
+            font-size: 12px; }
+          .content-wrap .main-content .grid-area .service-right .service-res p {
+            font-size: 9px;
+            line-height: 10px;
+            color: black;
+            letter-spacing: .1px;
+            margin-bottom: 20px; }
+          .content-wrap .main-content .grid-area .service-right .service-res .image-bottom-1 {
+            background-image: url("../images/service-res.jpg");
+            background-size: cover;
+            height: 200px;
+            width: 100%;
+            margin-bottom: 20px; }
+        .content-wrap .main-content .grid-area .service-right .service-com {
+          width: 100%;
+          -webkit-box-flex: 1;
+          -ms-flex: 1 0 48%;
+          flex: 1 0 48%; }
+          .content-wrap .main-content .grid-area .service-right .service-com h2 {
+            margin: 5px 0px;
+            font-size: 12px; }
+          .content-wrap .main-content .grid-area .service-right .service-com p {
+            font-size: 9px;
+            line-height: 10px;
+            color: black;
+            letter-spacing: .1px;
+            margin-bottom: 20px; }
+          .content-wrap .main-content .grid-area .service-right .service-com .image-bottom-2 {
+            background-image: url("../images/service-com.jpeg");
+            background-size: cover;
+            background-position: center;
+            height: 200px;
+            width: 100%;
+            margin-bottom: 20px; }
+      .content-wrap .main-content .grid-area .service-edecor .service-title {
+        text-align: center;
+        font-family: "Montserrat-Light"; }
+      .content-wrap .main-content .grid-area .service-edecor .service-divider {
+        width: 300px;
+        height: 1px;
+        background-color: #999;
+        margin: 0 auto;
+        margin-top: 7px; }
+      .content-wrap .main-content .grid-area .service-edecor .service-list {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        font-size: 10px;
+        font-family: "Montserrat-Medium";
+        margin: 0 auto;
+        width: 600px;
+        margin-bottom: 20px; }
+      .content-wrap .main-content .grid-area .service-edecor .service-cta {
+        width: 100%; }
+        .content-wrap .main-content .grid-area .service-edecor .service-cta .cta-edecor {
+          border: 1px solid #999;
+          width: 140px;
+          height: 50px;
+          margin: 0 auto;
+          line-height: 50px;
+          text-align: center;
+          text-transform: uppercase;
+          font-family: "Montserrat-Thin"; }
+          .content-wrap .main-content .grid-area .service-edecor .service-cta .cta-edecor a {
+            color: #999; }
+      .content-wrap .main-content .grid-area .edecor-right {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+        .content-wrap .main-content .grid-area .edecor-right .edecor-material {
+          height: 450px;
+          width: 300px;
+          background-image: url("../images/material-4.jpeg");
+          background-size: cover;
+          background-position: 15% 70%; }
+        .content-wrap .main-content .grid-area .edecor-right .edecor-description {
+          width: 100%;
+          font-family: "Montserrat-Medium";
+          font-size: 10px;
+          text-transform: uppercase;
+          padding: 0px 30px;
+          letter-spacing: -.2px; }
+          .content-wrap .main-content .grid-area .edecor-right .edecor-description .e-title {
+            text-align: center;
+            margin: 10px 0px;
+            font-family: "Montserrat-Bold"; }
+          .content-wrap .main-content .grid-area .edecor-right .edecor-description .e-intro {
+            margin: 20px 0px; }
+          .content-wrap .main-content .grid-area .edecor-right .edecor-description .e-howitworks {
+            text-transform: none;
+            margin: 5px 0px;
+            text-align: center; }
+          .content-wrap .main-content .grid-area .edecor-right .edecor-description .e-divider {
+            margin: 5px 0px;
+            width: 300px;
+            height: 1px;
+            background-color: #999;
+            margin: 10px auto; }
+          .content-wrap .main-content .grid-area .edecor-right .edecor-description .e-summary {
+            margin: 10px 0px; }
+          .content-wrap .main-content .grid-area .edecor-right .edecor-description .e-example {
+            margin: 20px 0px; }
       .content-wrap .main-content .grid-area .about-right {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -271,8 +387,8 @@ p {
           -webkit-box-flex: 0;
           -ms-flex: 0 0 33%;
           flex: 0 0 33%;
-          height: 140px;
-          margin-bottom: 2px;
+          height: 160px;
+          margin-bottom: 0px;
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex;
@@ -304,8 +420,9 @@ p {
           background-image: url("../images/gallery/adi.jpg");
           background-size: cover; }
         .content-wrap .main-content .grid-area .grid-photos .row2-col3 {
-          background-image: url("../images/gallery/nicole2.jpg");
-          background-size: cover; }
+          background-image: url("../images/gallery/material.jpeg");
+          background-size: cover;
+          background-position: 20% 30%; }
         .content-wrap .main-content .grid-area .grid-photos .row3-col1 {
           background-image: url("../images/gallery/blush.jpg");
           background-size: cover; }

@@ -140,6 +140,138 @@ p {
 			h2 {
 				font-family: $regular;
 			}
+			.service-right {
+				display: flex;
+				width: 750px;
+				margin: 0 auto;
+				.service-res {
+					width: 100%;
+					flex: 1 0 48%;
+					margin-right: 10px;
+					h2 {
+						margin: 5px 0px;
+						font-size: 12px;
+					}
+					p {
+						font-size: 9px;
+						line-height: 10px;
+						color: black;
+						letter-spacing: .1px;
+						margin-bottom: 20px;
+					}
+					.image-bottom-1 {
+						background-image: url("../images/service-res.jpg");
+						background-size: cover;
+						height: 200px;
+						width: 100%;
+						margin-bottom: 20px;
+					}
+				}
+				.service-com {
+					width: 100%;
+					flex: 1 0 48%;
+					h2 {
+						margin: 5px 0px;
+						font-size: 12px;
+					}
+					p {
+						font-size: 9px;
+						line-height: 10px;
+						color: black;
+						letter-spacing: .1px;
+						margin-bottom: 20px;
+					}
+					.image-bottom-2 {
+						background-image: url("../images/service-com.jpeg");
+						background-size: cover;
+						background-position: center;
+						height: 200px;
+						width: 100%;
+						margin-bottom: 20px;
+					}
+				}
+			}
+			.service-edecor {
+				.service-title {
+					text-align: center;
+					font-family: $light;
+				}
+				.service-divider {
+						width: 300px;
+						height: 1px;
+						background-color: #999;
+						margin: 0 auto;
+						margin-top: 7px;
+				}
+				.service-list {
+					display: flex;
+					font-size: 10px;
+					font-family: $medium;
+					margin: 0 auto;
+					width: 600px;
+					margin-bottom: 20px;
+				}
+				.service-cta {
+					width: 100%;
+					.cta-edecor {
+						border: 1px solid #999;
+						width: 140px;
+						height: 50px;
+						margin: 0 auto;
+						line-height: 50px;
+						text-align: center;
+						text-transform: uppercase;
+						font-family: $thin;
+						a {
+							color: #999;
+						}
+					}
+				}
+			}
+			.edecor-right {
+				display: flex;
+				.edecor-material {
+					height: 450px;
+					width: 300px;
+					background-image: url("../images/material-4.jpeg");
+					background-size: cover;
+					background-position: 15% 70%;
+				}
+				.edecor-description {
+					width: 100%;
+					font-family: $medium;
+					font-size: 10px;
+					text-transform: uppercase;
+					padding: 0px 30px;
+					letter-spacing: -.2px;
+					.e-title {
+						text-align: center;
+						margin: 10px 0px;
+						font-family: $bold;
+					}
+					.e-intro {
+						margin: 20px 0px;
+					}
+					.e-howitworks {
+						text-transform: none;
+						margin: 5px 0px;
+						text-align: center;
+					}
+					.e-divider {
+						margin: 5px 0px;
+						width: 300px;
+						height: 1px;
+						background-color: #999;
+						margin: 10px auto;
+					}
+					.e-summary {
+						margin: 10px 0px;
+					}
+					.e-example {
+						margin: 20px 0px;
+					}
+				}
+			}
 			.about-right {
 				display: flex;
 				width: 600px;
@@ -247,8 +379,8 @@ p {
   			justify-content: center;
 				.grid-cell {
 					flex: 0 0 33%;
-					height: 140px;
-					margin-bottom: 2px;
+					height: 160px;
+					margin-bottom: 0px;
 					display:flex;
 					align-items: center;
 					justify-content: center;
@@ -282,8 +414,9 @@ p {
 					background-size: cover;
 				}
 				.row2-col3{
-					background-image: url("../images/gallery/nicole2.jpg");
+					background-image: url("../images/gallery/material.jpeg");
 					background-size: cover;
+					background-position: 20% 30%;
 				}
 				.row3-col1{
 					background-image: url("../images/gallery/blush.jpg");
