@@ -1,0 +1,180 @@
+/* OLD SHARE BAR */
+/*
+.share-bar {
+  width: 200px;
+  position: relative;
+  top: 75px;
+  left: 20px;
+  margin: 0;
+  float: left;
+  padding: 30px 15px 0px 0px;
+  a {
+    text-decoration: none;
+    padding-right: 14px;
+    img {
+      opacity: .7;
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}
+*/
+/* OLD MAIN NAV */
+/*
+.main-nav {
+  padding-bottom: 0;
+  margin: 0;
+  float: right;
+  padding: 30px 15px 0px 0px;
+  .dropdown {
+    display: none;
+  }
+  ul {
+    padding: 0;
+    margin: 0;
+    li {
+      list-style-type: none;
+      display: inline-block;
+      text-align: center;
+      a {
+        display: inline-block;
+        /* FONT */
+/*
+        text-align: center;
+        font-family: arial;
+        font-size: 12px;
+        text-decoration: none;
+        color: #616161;
+        */
+/* PADDING */
+/*margin-left: 3px;
+        padding: 16px 8px 8px;
+        &:hover {
+          cursor: pointer;
+          color: #e0ab92;
+          background-color: rgba(255,255,255,.9);
+        }
+      }
+    }
+  }
+}
+}
+*/
+/* OLD PACKAGES */
+/*
+.packages {
+  height: 100px;
+  background-color: #313131;
+  border: 6px solid;
+  -webkit-border-image: url(../images/gold-texture-lighters.png) 4% repeat; /* Safari 3.1-5 */
+/* -o-border-image: url(../images/gold-texture-lighters.png) 4% repeat; /* Opera 11-12.1 */
+/*border-image: url(../images/gold-texture-lighters.png) 4% repeat;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  p {
+    float: left;
+    line-height: 100px;
+    margin-left: 300px;
+    color: #CCC;
+    margin-right: 10px;
+  }
+  .package-icons {
+    margin: 0 auto;
+    width: 330px;
+    a {
+      text-decoration: none;
+      img {
+        margin-right: 85px;
+        height: 50px;
+        margin-top: 22px;
+        opacity: .7;
+        &:hover {
+          opacity: .9;
+          cursor: pointer;
+          -webkit-transform: rotate(10deg);
+        }
+      }
+      .special {
+        margin-right: 0px;
+      }
+    }
+  }
+}
+*/
+/* OLD ABOUT SECTION */
+/* .about {
+  width: 824px;
+  height: 320px;
+  background-image: url(../images/zazstudio-5963.jpg);
+  background-position-y: -140px;
+  background-size: 100%;
+  padding: 40px 100px;
+  .about-text {
+    background-color: rgba(255,255,255,.9);
+    border-radius: 4px;
+    width: 390px;
+    height: 280px;
+    padding: 25px;
+    float: left;
+    .about-title {
+      p {
+        font-size: 14px;
+        letter-spacing: 2px;
+        color: #313131;
+        font-weight: 800;
+        text-align: center;
+        padding-bottom: 10px;
+      }
+    }
+    .about-description {
+      p {
+        color: #313131;
+        font-size: 13px;
+        letter-spacing: 1px;
+        text-transform: none;
+        line-height: 15px;
+      }
+    }
+  }
+  .about-image {
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin-top: 45px;
+    margin-left: 140px;
+    border-radius: 400px;
+    background-image: url(../images/zazstudio-6275.jpg);
+    background-size: 210%;
+    background-position: 13% 30%;
+    border: 6px solid #FFF;
+  }
+}
+*/
+/* OLD INSTAGRAM CONTAINER */
+/*
+.instagram-container {
+  width: 100%;
+  background-color: rgba(255, 255, 255, .9);
+  .instagram-wall {
+    margin-left: 222px;
+    width: 500px;
+    height: 700px;
+    padding: 20px 0px;
+    p {
+      letter-spacing: 3px;
+      color: rgb(28, 7, 11);
+      text-align: center;
+      font-weight: 300;
+      font-size: 20px;
+      font-family: $stayrad;
+      margin: 22px 0px 32px;
+      padding-left: 88px;
+    }
+    iframe {
+      border: 2px solid rgb(70,70,70);
+      border-style: none;
+    }
+  }
+}*/

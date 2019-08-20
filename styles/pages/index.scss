@@ -1,10 +1,13 @@
 html, body {
 	margin: 0;
 	padding: 0;
-	background-color: $teal-light;
+	background-color: #FFF;
 }
 .clearfix {
 	overflow: auto;
+}
+a {
+	text-decoration: none;
 }
 .clearfix:after {
 	content: "";
@@ -12,87 +15,422 @@ html, body {
 	clear: both;
 }
 p {
-	color: #FFF;
+	color: #666;
 	text-transform: uppercase;
 	letter-spacing: 12px;
-	font-family: 'Avenir', $helvetica;
+	font-family: $regular, $helvetica;
 }
 .content-wrap {
 	width: 1024px;
 	margin: auto;
-	background-color: $teal;
-	border: 1px solid #adc3c5;
-	border-top: none;
-	border-bottom: none;
-	box-shadow: 0px 10px 5px 5px rgba(0,0,0,.1);
 	header {
 		background-color: white;
 		height: 140px;
-		box-shadow: 0px 5px 0px 0px rgba(0,0,0,.9);
-		background-repeat: no-repeat;
-		background-position: 50% 50%;
-		.share-bar {
-			width: 200px;
-			position: relative;
-			top: 75px;
-			left: 20px;
-			margin: 0;
-			float: left;
-			padding: 30px 15px 0px 0px;
-			a {
-				text-decoration: none;
-				padding-right: 14px;
-				img {
-					opacity: .7;
-					&:hover {
-						opacity: 1;
-					}
+		display: flex;
+		.logo-container {
+			height: 100%;
+			width: 140px;
+			background-image: url(../images/logo-Z.png);
+			background-size: contain;
+			background-repeat: no-repeat;
+		}
+		.name-full {
+			height: 100%;
+			.company-name {
+				p {
+					width: 295px;
+					position: relative;
+					top: 45px;
+					color: black;
+					font-size: 28px;
+					text-align: center;
+				}
+				.boutique-text {
+					font-family: $Vultures;
+					letter-spacing: 3px;
+					color: rgb(28, 7, 11);
+					text-transform: none;
+					font-weight: 300;
+					font-size: 26px;
+					text-align: center;
+					position: relative;
+					left: -10px;
 				}
 			}
 		}
-		.logo-container {
-			width: 135px;
-			height: 63px;
-			overflow: visible;
-			position: relative;
-			margin: 0 auto;
-			img {
-				width: 100%;
-				margin: 0 auto;
+
+		.inquiries {
+			height: 100%;
+			width: 989px;
+			.inquiry-box {
+				float: right;
+				width: 150px;
+				display: flex;
+				.houzz-logo {
+					position: relative;
+					top: 50px;
+					right: 7px;
+					height: 40px;
+					width: 40px;
+					vertical-align: middle;
+					background-image: url("../images/houzz-inquiries.png");
+					background-size: contain;
+				}
+				p {
+					text-align: right;
+					letter-spacing: 1px;
+					line-height: 140px;
+					font-size: 14px;
+				}
 			}
 		}
-		.main-nav {
-			padding-bottom: 0;
-			margin: 0;
-			float: right;
-			padding: 30px 15px 0px 0px;
-			.dropdown {
-				display: none;
-			}
+		.houzz-logo {
+			height: 100%;
+			width: 50px;
+		}
+	}
+	.main-content {
+		display: flex;
+		.sidebar-nav {
+			padding-top: 20px;
+			width: 240px;
+			height: 100%;
 			ul {
-				padding: 0;
-				margin: 0;
-				li {
-					list-style-type: none;
-					display: inline-block;
-					text-align: center;
-					a {
-						display: inline-block;
-						/* FONT */
-						text-align: center;
-						font-family: arial;
-						font-size: 12px;
-						text-decoration: none;
-						color: #616161;
-						/* PADDING */
-						margin-left: 3px;
-						padding: 16px 8px 8px;
+				padding-left: 20px;
+				a {
+					text-decoration: none;
+					li {
+						font-family: $regular;
+						text-transform: uppercase;
+						color: #666;
+						list-style: none;
+						padding-bottom: 20px;
+						font-size: 17px;
 						&:hover {
-							cursor: pointer;
-							color: #e0ab92;
-							background-color: rgba(255,255,255,.9);
+							color: #111;
 						}
 					}
+				}
+				button {
+					border: none;
+					font-family: $regular;
+					text-transform: uppercase;
+					color: #666;
+					list-style: none;
+					margin-bottom: 20px;
+					font-size: 17px;
+					padding: 0px;
+					background-color: transparent;
+					cursor: pointer;
+				}
+			}
+			.share-icons{
+				margin-left: 20px;
+				opacity: .5;
+				img {
+					padding-left: 5px;
+				}
+			}
+		}
+		.grid-area {
+			width: 100%;
+			max-width: 900px;
+			height: auto;
+			padding: 20px;
+			h2 {
+				font-family: $regular;
+			}
+			.service-right {
+				display: flex;
+				width: 750px;
+				margin: 0 auto;
+				.service-res {
+					width: 100%;
+					flex: 1 0 48%;
+					margin-right: 10px;
+					h2 {
+						margin: 5px 0px;
+						font-size: 12px;
+					}
+					p {
+						font-size: 9px;
+						line-height: 10px;
+						color: black;
+						letter-spacing: .1px;
+						margin-bottom: 20px;
+					}
+					.image-bottom-1 {
+						background-image: url("../images/service-res.jpg");
+						background-size: cover;
+						height: 200px;
+						width: 100%;
+						margin-bottom: 20px;
+					}
+				}
+				.service-com {
+					width: 100%;
+					flex: 1 0 48%;
+					h2 {
+						margin: 5px 0px;
+						font-size: 12px;
+					}
+					p {
+						font-size: 9px;
+						line-height: 10px;
+						color: black;
+						letter-spacing: .1px;
+						margin-bottom: 20px;
+					}
+					.image-bottom-2 {
+						background-image: url("../images/service-com.jpeg");
+						background-size: cover;
+						background-position: center;
+						height: 200px;
+						width: 100%;
+						margin-bottom: 20px;
+					}
+				}
+			}
+			.service-edecor {
+				.service-title {
+					text-align: center;
+					font-family: $light;
+				}
+				.service-divider {
+						width: 300px;
+						height: 1px;
+						background-color: #999;
+						margin: 0 auto;
+						margin-top: 7px;
+				}
+				.service-list {
+					display: flex;
+					font-size: 10px;
+					font-family: $medium;
+					margin: 0 auto;
+					width: 600px;
+					margin-bottom: 20px;
+				}
+				.service-cta {
+					width: 100%;
+					.cta-edecor {
+						border: 1px solid #999;
+						width: 140px;
+						height: 50px;
+						margin: 0 auto;
+						line-height: 50px;
+						text-align: center;
+						text-transform: uppercase;
+						font-family: $thin;
+						a {
+							color: #999;
+						}
+					}
+				}
+			}
+			.edecor-right {
+				display: flex;
+				.edecor-material {
+					height: 450px;
+					width: 300px;
+					background-image: url("../images/material-4.jpeg");
+					background-size: cover;
+					background-position: 15% 70%;
+				}
+				.edecor-description {
+					width: 100%;
+					font-family: $medium;
+					font-size: 10px;
+					text-transform: uppercase;
+					padding: 0px 30px;
+					letter-spacing: -.2px;
+					.e-title {
+						text-align: center;
+						margin: 10px 0px;
+						font-family: $bold;
+					}
+					.e-intro {
+						margin: 20px 0px;
+					}
+					.e-howitworks {
+						text-transform: none;
+						margin: 5px 0px;
+						text-align: center;
+					}
+					.e-divider {
+						margin: 5px 0px;
+						width: 300px;
+						height: 1px;
+						background-color: #999;
+						margin: 10px auto;
+					}
+					.e-summary {
+						margin: 10px 0px;
+					}
+					.e-example {
+						margin: 20px 0px;
+					}
+				}
+			}
+			.about-right {
+				display: flex;
+				width: 600px;
+				margin: 0 auto;
+				.about-text {
+					margin-top: 30px;
+					width: 350px;
+					h2 {
+						text-transform: uppercase;
+						font-size: 14px;
+					}
+					.about-paragraph {
+						font-size: 9px;
+						text-transform: none;
+						letter-spacing: .1px;
+					}
+				}
+				.about-image {
+					float: left;
+					width: 200px;
+					height: 200px;
+					margin-top: 20px;
+					margin-left: 40px;
+					border-radius: 400px;
+					background-image: url(../images/zazstudio-6275.jpg);
+					background-size: 210%;
+					background-position: 13% 30%;
+					border: 6px solid #FFF;
+				}
+			}
+			.contact-right {
+				display: flex;
+				width: 600px;
+				height: 300px;
+				margin: 0 auto;
+				.contact-info {
+					position: relative;
+					top: 50px;
+					h1 {
+						font-size: 10px;
+						font-family: $medium;
+						text-transform: uppercase;
+					}
+					p {
+						font-size: 10px;
+						text-transform: none;
+						letter-spacing: .1px;
+					}
+				}
+				.contact-map {
+					margin-left: 40px;
+				}
+			}
+			.grid-press {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-around;
+				.press-cell {
+					background-color: black;
+					margin: 10px;
+					width: 150px;
+					height: 200px;
+					background-position: center;
+				}
+				.mag1 {
+					background-image: url('../images/press/hospitality_design.jpg');
+					background-size: cover;
+				}
+				.mag2 {
+					background-image: url('../images/press/boston_voyager.jpg');
+					background-size: cover;
+				}
+				.mag3 {
+					background-image: url('../images/press/chairish.jpg');
+					background-size: cover;
+				}
+				.mag4 {
+					background-image: url('../images/press/dream_world_decor.jpg');
+					background-size: cover;
+				}
+				.mag5 {
+					background-image: url('../images/press/virserius_studio.jpg');
+					background-size: cover;
+				}
+				.mag6 {
+					background-image: url('../images/press/houzz_week_22.jpg');
+					background-size: cover;
+				}
+				.mag7 {
+					background-image: url('../images/press/imaggo.jpg');
+					background-size: cover;
+				}
+				.mag8 {
+					background-image: url('../images/press/inviting_interiors.jpg');
+					background-size: cover;
+				}
+			}
+			.grid-photos {
+				width: 800px;
+				height: 100%;
+				margin: 0px auto;
+				display: flex;
+				flex-wrap: wrap;
+				align-items: center;
+  			justify-content: center;
+				.grid-cell {
+					flex: 0 0 33%;
+					height: 160px;
+					margin-bottom: 0px;
+					display:flex;
+					align-items: center;
+					justify-content: center;
+					p {
+						letter-spacing: .1px;
+						text-transform: none;
+						font-size: 11px;
+						padding: 15px;
+						color: #333;
+					}
+				}
+				.row1-col1{
+					background-image: url("../images/gallery/nicole.jpg");
+					background-size: cover;
+				}
+				.row1-col2{
+					background-image: url("../images/gallery/beach.jpg");
+					background-size: cover;
+				}
+				.row1-col3{
+					background-color: #EEE;
+					p {
+						font-size: 10px;
+					}
+				}
+				.row2-col1{
+					background-color: #EEE;
+				}
+				.row2-col2{
+					background-image: url("../images/gallery/adi.jpg");
+					background-size: cover;
+				}
+				.row2-col3{
+					background-image: url("../images/gallery/material.jpeg");
+					background-size: cover;
+					background-position: 20% 30%;
+				}
+				.row3-col1{
+					background-image: url("../images/gallery/blush.jpg");
+					background-size: cover;
+				}
+				.row3-col2{
+					background-color: #EEE;
+					p {
+						font-size: 9px;
+					}
+				}
+				.row3-col3{
+					background-image: url("../images/gallery/adi2.jpg");
+					background-size: cover;
 				}
 			}
 		}
@@ -101,142 +439,6 @@ p {
 		margin: 0;
 		padding: 0;
 	}
-	.black-line {
-		height: 338px;
-		background-image: url('../images/zaz-main-img.jpg');
-		background-size: 100%;
-		background-repeat: no-repeat;
-		padding: 40px 0px 0px 80px;
-		border: 2px solid #313131;
-		border-left: 0;
-		border-right: 0;
-		border-bottom: 0;
-	}
-	.packages {
-		height: 100px;
-		background-color: #313131;
-		border: 6px solid;
-		-webkit-border-image: url(../images/gold-texture-lighters.png) 4% repeat; /* Safari 3.1-5 */
-	    -o-border-image: url(../images/gold-texture-lighters.png) 4% repeat; /* Opera 11-12.1 */
-		border-image: url(../images/gold-texture-lighters.png) 4% repeat;
-		border-left: 0;
-		border-right: 0;
-		border-top: 0;
-		p {
-			float: left;
-			line-height: 100px;
-			margin-left: 300px;
-			color: #CCC;
-			margin-right: 10px;
-		}
-		.package-icons {
-			margin: 0 auto;
-			width: 330px;
-			a {
-				text-decoration: none;
-				img {
-					margin-right: 85px;
-					height: 50px;
-					margin-top: 22px;
-					opacity: .7;
-					&:hover {
-						opacity: .9;
-						cursor: pointer;
-						-webkit-transform: rotate(10deg);
-					}
-				}
-				.special {
-					margin-right: 0px;
-				}
-			}
-		}
-	}
-	.about {
-		width: 824px;
-		height: 320px;
-		background-image: url(../images/zazstudio-5963.jpg);
-		background-position-y: -140px;
-		background-size: 100%;
-		padding: 40px 100px;
-		.about-text {
-			background-color: rgba(255,255,255,.9);
-			border-radius: 4px;
-			width: 390px;
-			height: 280px;
-			padding: 25px;
-			float: left;
-			.about-title {
-				p {
-					font-size: 14px;
-					letter-spacing: 2px;
-					color: #313131;
-					font-weight: 800;
-					text-align: center;
-					padding-bottom: 10px;
-				}
-			}
-			.about-description {
-				p {
-					color: #313131;
-					font-size: 13px;
-					letter-spacing: 1px;
-					text-transform: none;
-					line-height: 15px;
-				}
-			}
-		}
-		.about-image {
-			float: left;
-			width: 200px;
-			height: 200px;
-			margin-top: 45px;
-			margin-left: 140px;
-			border-radius: 400px;
-			background-image: url(../images/zazstudio-6275.jpg);
-			background-size: 210%;
-			background-position: 13% 30%;
-			border: 6px solid #FFF;
-		}
-	}
-	.instagram-container {
-		width: 100%;
-		background-color: rgba(255, 255, 255, .9);
-		.instagram-wall {
-			margin-left: 252px;
-			width: 500px;
-			height: 700px;
-			padding: 20px 0px;
-			p {
-				letter-spacing: 3px;
-				color: rgb(28, 7, 11);
-				text-align: center;
-				font-weight: 300;
-				font-size: 20px;
-				margin: 22px 0px 32px;
-			}
-			iframe {
-				border: 2px solid rgb(70,70,70);
-				border-style: none;
-			}
-		}
-	}
-	.share-hero {
-		background-color: white;
-		.share-container {
-			margin: 0 auto;
-			display: block;
-			padding: 50px 0px;
-			p {
-				font-family: 'Vultures';
-				letter-spacing: 3px;
-				color: rgb(28, 7, 11);
-				text-align: center;
-				text-transform: none;
-				font-weight: 300;
-				font-size: 56px;
-			}
-		}
-	}
 	h5 {
 		font-family: 'Avenir';
 		font-weight: 200;
@@ -244,11 +446,11 @@ p {
 		text-align: center;
 		padding: 20px;
 		margin: auto;
-		background-color: #313131;
-		color: white;
+		background-color: #FFF;
+		color: #999;
 		a {
 			text-decoration: none;
-			color: white;
+			color: #999;
 		}
 	}
 }
